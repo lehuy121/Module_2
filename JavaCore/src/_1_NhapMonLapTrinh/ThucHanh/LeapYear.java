@@ -1,4 +1,4 @@
-package NhapMonLapTrinh.ThucHanh;
+package _1_NhapMonLapTrinh.ThucHanh;
 
 import java.util.Scanner;
 

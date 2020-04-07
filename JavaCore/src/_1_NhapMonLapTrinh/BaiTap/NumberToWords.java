@@ -1,4 +1,4 @@
-package NhapMonLapTrinh.BaiTap;
+package _1_NhapMonLapTrinh.BaiTap;
 
 import java.util.Scanner;
 
