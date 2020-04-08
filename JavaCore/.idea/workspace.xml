@@ -45,9 +45,9 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MergeArray">
-    <configuration name="CountStudentPass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.ThucHanh.CountStudentPass" />
+  <component name="RunManager" selected="Application.SumColsNumberIn2DArray">
+    <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.AddElementToArray" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
@@ -59,8 +59,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMaxElementIn2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.FindMaxElementIn2DArray" />
+    <configuration name="CountCharacterInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.CountCharacterInString" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
@@ -72,8 +72,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.MergeArray" />
+    <configuration name="RemoveElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.RemoveElementInArray" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingArrayIndexOutOfBoundsException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.ThucHanh.UsingArrayIndexOutOfBoundsException" />
+    <configuration name="SumColsNumberIn2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.SumColsNumberIn2DArray" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingIllegalTriangleException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.UsingIllegalTriangleException" />
+    <configuration name="SumDiagonals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.SumDiagonals" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MergeArray" />
-        <item itemvalue="Application.CountStudentPass" />
-        <item itemvalue="Application.UsingIllegalTriangleException" />
-        <item itemvalue="Application.UsingArrayIndexOutOfBoundsException" />
-        <item itemvalue="Application.FindMaxElementIn2DArray" />
+        <item itemvalue="Application.SumColsNumberIn2DArray" />
+        <item itemvalue="Application.SumDiagonals" />
+        <item itemvalue="Application.AddElementToArray" />
+        <item itemvalue="Application.CountCharacterInString" />
+        <item itemvalue="Application.RemoveElementInArray" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586247033144</updated>
       <workItem from="1586247036249" duration="18015000" />
-      <workItem from="1586307972503" duration="24529000" />
+      <workItem from="1586307972503" duration="36120000" />
     </task>
     <servers />
   </component>
@@ -144,38 +144,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
-    <state width="1323" height="284" key="GridCell.Tab.0.bottom" timestamp="1586345062746">
+    <state width="1323" height="317" key="GridCell.Tab.0.bottom" timestamp="1586359373610">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="284" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586345062746" />
-    <state width="1323" height="284" key="GridCell.Tab.0.center" timestamp="1586345062745">
+    <state width="1323" height="317" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586359373610" />
+    <state width="1323" height="317" key="GridCell.Tab.0.center" timestamp="1586359373610">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="284" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586345062745" />
-    <state width="1323" height="284" key="GridCell.Tab.0.left" timestamp="1586345062745">
+    <state width="1323" height="317" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586359373610" />
+    <state width="1323" height="317" key="GridCell.Tab.0.left" timestamp="1586359373610">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="284" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586345062745" />
-    <state width="1323" height="284" key="GridCell.Tab.0.right" timestamp="1586345062746">
+    <state width="1323" height="317" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586359373610" />
+    <state width="1323" height="317" key="GridCell.Tab.0.right" timestamp="1586359373610">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="284" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586345062746" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1586315541487">
+    <state width="1323" height="317" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586359373610" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1586349127267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1586315541487">
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586349127267" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1586349127267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1586315541487">
+    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586349127267" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1586349127267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1586315541487">
+    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586349127267" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1586349127267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586349127267" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586307975655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -4,7 +4,7 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class AddElementToArray {
-    static int[] arraysNumber = new int[10];
+    static int[] arraysNumber = {10, 4, 6, 7, 8, 0, 0, 0, 0, 0};
 
     public static void main(String[] args) {
         userInput();
@@ -12,27 +12,30 @@ public class AddElementToArray {
 
     static void userInput() {
         Scanner scan = new Scanner(System.in);
-        int value = 0;
-        int index = 0;
-        while (index <= arraysNumber.length) {
-            System.out.println("Add element to Array. Input index > 10 if you want to quit.");
-            System.out.println("Enter value:");
-            value = scan.nextInt();
-            System.out.println("Enter index:");
-            index = scan.nextInt();
-            if (index <= arraysNumber.length) {
-                addElementToArray(arraysNumber, value, index);
-                display(arraysNumber);
-            } else {
-                System.out.println("Index input: " + index + " is greater than size of Array. Can't add, stop program!!!");
-            }
-        }
+
+        System.out.println("Add element to Array");
+        System.out.println("Enter value:");
+        int value = scan.nextInt();
+
+        System.out.println("Enter index:");
+        int index = scan.nextInt();
+
+        addElementToArray(arraysNumber, value, index);
+        display(arraysNumber);
 
     }
 
     static void addElementToArray(int[] arr, int value, int index) {
-        arr[index - 1] = value;
+        if (index <= 1 || index >= arr.length - 1) {
+            System.out.println("Can't insert element to array");
+            return;
+        }
+        for (int i = arr.length - 1; i > index; i--) {
+            arr[i] = arr[i - 1];
+        }
+        arr[index] = value;
     }
+
 
     static void display(int[] arr) {
         System.out.println("Array list: ");
