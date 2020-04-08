@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="" />
+    <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1aCkbOMJY7Dw3itX6ABBSVzvwv4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,13 +44,13 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConvertMoney">
-    <configuration name="ConvertMoney" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_NhapMonLapTrinh.BaiTap.ConvertMoney" />
+  <component name="RunManager" selected="Application.AddElementToArray">
+    <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.BaiTap.AddElementToArray" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_NhapMonLapTrinh.BaiTap.*" />
+          <option name="PATTERN" value="_2_MangVaPhuongThuc.BaiTap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -52,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayFirst20PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_NhapMonLapTrinh.BaiTap.DisplayFirst20PrimeNumber" />
+    <configuration name="ConvertTemperature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.ThucHanh.ConvertTemperature" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_NhapMonLapTrinh.BaiTap.*" />
+          <option name="PATTERN" value="_2_MangVaPhuongThuc.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayPrimeNumberLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_NhapMonLapTrinh.BaiTap.DisplayPrimeNumberLessThan100" />
+    <configuration name="FindMaxElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.ThucHanh.FindMaxElement" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_NhapMonLapTrinh.BaiTap.*" />
+          <option name="PATTERN" value="_2_MangVaPhuongThuc.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayTypeOfFigures" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_NhapMonLapTrinh.BaiTap.DisplayTypeOfFigures" />
+    <configuration name="FindMinElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.ThucHanh.FindMinElement" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_NhapMonLapTrinh.BaiTap.*" />
+          <option name="PATTERN" value="_2_MangVaPhuongThuc.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_NhapMonLapTrinh.ThucHanh.PrimeNumber" />
+    <configuration name="ReverseElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_MangVaPhuongThuc.ThucHanh.ReverseElementInArray" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_NhapMonLapTrinh.ThucHanh.*" />
+          <option name="PATTERN" value="_2_MangVaPhuongThuc.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConvertMoney" />
-        <item itemvalue="Application.DisplayTypeOfFigures" />
-        <item itemvalue="Application.PrimeNumber" />
-        <item itemvalue="Application.DisplayFirst20PrimeNumber" />
-        <item itemvalue="Application.DisplayPrimeNumberLessThan100" />
+        <item itemvalue="Application.AddElementToArray" />
+        <item itemvalue="Application.FindMinElement" />
+        <item itemvalue="Application.ReverseElementInArray" />
+        <item itemvalue="Application.FindMaxElement" />
+        <item itemvalue="Application.ConvertTemperature" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +130,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586247033144</updated>
-      <workItem from="1586247036249" duration="17093000" />
+      <workItem from="1586247036249" duration="18015000" />
+      <workItem from="1586307972503" duration="14461000" />
     </task>
     <servers />
   </component>
@@ -136,41 +143,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
-    <state width="1323" height="403" key="GridCell.Tab.0.bottom" timestamp="1586266302853">
+    <state width="1323" height="284" key="GridCell.Tab.0.bottom" timestamp="1586333728207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="403" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586266302853" />
-    <state width="1323" height="403" key="GridCell.Tab.0.center" timestamp="1586266302853">
+    <state width="1323" height="284" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586333728207" />
+    <state width="1323" height="284" key="GridCell.Tab.0.center" timestamp="1586333728207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="403" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586266302853" />
-    <state width="1323" height="403" key="GridCell.Tab.0.left" timestamp="1586266302853">
+    <state width="1323" height="284" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586333728207" />
+    <state width="1323" height="284" key="GridCell.Tab.0.left" timestamp="1586333728206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="403" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586266302853" />
-    <state width="1323" height="403" key="GridCell.Tab.0.right" timestamp="1586266302853">
+    <state width="1323" height="284" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586333728206" />
+    <state width="1323" height="284" key="GridCell.Tab.0.right" timestamp="1586333728207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="403" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586266302853" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1586249256007">
+    <state width="1323" height="284" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586333728207" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1586315541487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586249256007" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1586249256007">
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1586315541487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586249256007" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1586249256007">
+    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1586315541487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586249256007" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1586249256007">
+    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1586315541487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586249256007" />
-    <state x="413" y="131" key="extract.method.dialog" timestamp="1586251431351">
+    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586315541487" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586307975655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="131" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1586251431351" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586307975655" />
+    <state x="413" y="131" key="extract.method.dialog" timestamp="1586328200846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="131" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1586328200846" />
   </component>
 </project>
