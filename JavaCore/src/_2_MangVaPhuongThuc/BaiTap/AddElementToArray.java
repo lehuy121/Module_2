@@ -1,5 +1,6 @@
 package _2_MangVaPhuongThuc.BaiTap;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class AddElementToArray {
@@ -14,6 +15,7 @@ public class AddElementToArray {
         int value = 0;
         int index = 0;
         while (index <= arraysNumber.length) {
+            System.out.println("Add element to Array. Input index > 10 if you want to quit.");
             System.out.println("Enter value:");
             value = scan.nextInt();
             System.out.println("Enter index:");
@@ -22,8 +24,7 @@ public class AddElementToArray {
                 addElementToArray(arraysNumber, value, index);
                 display(arraysNumber);
             } else {
-                System.out.println("Index input: " + index + " is greater than size of Array. Can't add,stop program!!!");
-                break;
+                System.out.println("Index input: " + index + " is greater than size of Array. Can't add, stop program!!!");
             }
         }
 
