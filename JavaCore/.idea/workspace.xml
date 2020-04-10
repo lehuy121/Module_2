@@ -2,41 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/MainTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/BaiTap/ConvertMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/baitap/ConvertMoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/BaiTap/DisplayFirst20PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/baitap/DisplayFirst20PrimeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/BaiTap/DisplayHelloMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/baitap/DisplayHelloMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/BaiTap/DisplayPrimeNumberLessThan100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/baitap/DisplayPrimeNumberLessThan100.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/BaiTap/DisplayTypeOfFigures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/baitap/DisplayTypeOfFigures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/BaiTap/NumberToWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/baitap/NumberToWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/BMICalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/BMICalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/CalculateDaysInMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/CalculateDaysInMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/DeclareAndUseVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/DeclareAndUseVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/FindElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/FindElementInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/LeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/LeapYear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/LinearEquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/LinearEquationResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/LoanCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/MenuApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/MenuApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/PrimeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/SystemTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/UCLN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/UCLN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_NhapMonLapTrinh/ThucHanh/UsingOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1nhapmonlaptrinh/thuchanh/UsingOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/AddElementToArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/CountCharacterInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/CountCharacterInString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/FindMaxElementIn2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/FindMaxElementIn2DArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/FindMinElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/FindMinElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/IllegalTriangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/IllegalTriangleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/MergeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/MergeArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/RemoveElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/RemoveElementInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/SumColsNumberIn2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/SumColsNumberIn2DArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/SumDiagonals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/SumDiagonals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/BaiTap/UsingIllegalTriangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/UsingIllegalTriangleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/ThucHanh/ConvertTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/thuchanh/ConvertTemperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/ThucHanh/CountStudentPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/thuchanh/CountStudentPass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/ThucHanh/FindMaxElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/thuchanh/FindMaxElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/ThucHanh/FindMinElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/thuchanh/FindMinElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/ThucHanh/ReverseElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/thuchanh/ReverseElementInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_MangVaPhuongThuc/ThucHanh/UsingArrayIndexOutOfBoundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/thuchanh/UsingArrayIndexOutOfBoundsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/IllegalTriangleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/RemoveElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/RemoveElementInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/SumColsNumberIn2DArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/UsingIllegalTriangleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/Fan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/MainStopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/MainStopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/StopWatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +54,7 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainFan">
+  <component name="RunManager" selected="Application.MainStopWatch">
     <configuration name="MainFan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_3lop_va_doi_tuong.baitap.MainFan" />
       <module name="JavaCore" />
@@ -119,6 +94,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2mang_va_phuong_thuc.baitap.MainTriangle" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_2mang_va_phuong_thuc.baitap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RemoveElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_2mang_va_phuong_thuc.baitap.RemoveElementInArray" />
       <module name="JavaCore" />
@@ -132,26 +120,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XoaPhanTuKhoiMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2mang_va_phuong_thuc.baitap.XoaPhanTuKhoiMang" />
-      <module name="JavaCore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2mang_va_phuong_thuc.baitap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainFan" />
         <item itemvalue="Application.MainStopWatch" />
-        <item itemvalue="Application.MainQuadraticEquation" />
+        <item itemvalue="Application.MainTriangle" />
+        <item itemvalue="Application.MainFan" />
         <item itemvalue="Application.RemoveElementInArray" />
-        <item itemvalue="Application.XoaPhanTuKhoiMang" />
+        <item itemvalue="Application.MainQuadraticEquation" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +144,12 @@
       <workItem from="1586307972503" duration="38882000" />
       <workItem from="1586363046870" duration="1140000" />
       <workItem from="1586400058269" duration="3283000" />
-      <workItem from="1586410818082" duration="22043000" />
+      <workItem from="1586410818082" duration="23809000" />
+      <workItem from="1586483905091" duration="363000" />
+      <workItem from="1586484327422" duration="296000" />
+      <workItem from="1586484674271" duration="1059000" />
+      <workItem from="1586485777886" duration="421000" />
+      <workItem from="1586486239820" duration="10527000" />
     </task>
     <servers />
   </component>
@@ -181,54 +161,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586444391097">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586503846226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586444391097" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586503846226" />
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1586362435958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1586362435958" />
-    <state width="1323" height="162" key="GridCell.Tab.0.bottom" timestamp="1586445430101">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586508867437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="162" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586445430101" />
-    <state width="1323" height="162" key="GridCell.Tab.0.center" timestamp="1586445430101">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586508867437" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586508867437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="162" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586445430101" />
-    <state width="1323" height="162" key="GridCell.Tab.0.left" timestamp="1586445430101">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586508867437" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586508867436">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="162" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586445430101" />
-    <state width="1323" height="162" key="GridCell.Tab.0.right" timestamp="1586445430101">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586508867436" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586508867437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="162" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586445430101" />
-    <state width="1323" height="190" key="GridCell.Tab.1.bottom" timestamp="1586433072999">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586508867437" />
+    <state width="1323" height="190" key="GridCell.Tab.1.bottom" timestamp="1586447592031">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586433072999" />
-    <state width="1323" height="190" key="GridCell.Tab.1.center" timestamp="1586433072999">
+    <state width="1323" height="190" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586447592031" />
+    <state width="1323" height="190" key="GridCell.Tab.1.center" timestamp="1586447592030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586433072999" />
-    <state width="1323" height="190" key="GridCell.Tab.1.left" timestamp="1586433072999">
+    <state width="1323" height="190" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586447592030" />
+    <state width="1323" height="190" key="GridCell.Tab.1.left" timestamp="1586447592030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586433072999" />
-    <state width="1323" height="190" key="GridCell.Tab.1.right" timestamp="1586433072999">
+    <state width="1323" height="190" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586447592030" />
+    <state width="1323" height="190" key="GridCell.Tab.1.right" timestamp="1586447592031">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586433072999" />
-    <state x="114" y="15" key="SettingsEditor" timestamp="1586410776755">
+    <state width="1323" height="190" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586447592031" />
+    <state x="28" y="0" width="1277" height="708" key="SettingsEditor" timestamp="1586487364654">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="114" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586410776755" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586410817172">
+    <state x="28" y="0" width="1277" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586487364654" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586486257964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586410817172" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586486257964" />
     <state x="413" y="131" key="extract.method.dialog" timestamp="1586328200846">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

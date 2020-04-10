@@ -52,15 +52,6 @@ public class Fan {
 
     @Override
     public String toString() {
-        if (this.on) {
-            return "{" + "speed=" + this.getSpeed() + ", Fan is on" + ", radius=" + this.getRadius() + ", color='" + this.getColor() + "\'" + "}";
-        }
-        return "{" +
-                "speed=" + this.getSpeed() +
-                ", Fan is off" +
-                ", radius=" + this.getRadius() +
-                ", color='" + this.getColor() + '\'' +
-                '}';
-
+        return "{" + "speed=" + this.getSpeed() + (this.isOn() ? ", Fan is on" : ", Fan is off") + ", radius=" + this.getRadius() + ", color='" + this.getColor() + "'" + "}";
     }
 }

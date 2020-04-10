@@ -1,15 +1,16 @@
 package _3lop_va_doi_tuong.baitap;
 
+import java.sql.SQLOutput;
 import java.util.Random;
 
 public class MainStopWatch {
     public static void main(String[] args) {
         StopWatch stopwatch = new StopWatch();
         int[] array = generateNumber();
+
         System.out.println(stopwatch.start());
-
+        System.out.println("Running...");
         selectionSort(array);
-
         System.out.println(stopwatch.stop());
         System.out.println(stopwatch.getElapsedTime() + " Second");
     }
@@ -38,11 +39,10 @@ public class MainStopWatch {
 
     static int randomFill() {
         Random rand = new Random();
-        int randomNum = rand.nextInt(100000);
-        return randomNum;
+        return rand.nextInt(100000);
     }
 
-    static int[] selectionSort(int arr[]) {
+    static void selectionSort(int[] arr) {
         int n = arr.length;
         // One by one move boundary of unsorted subarray
         for (int i = 0; i < n - 1; i++) {
@@ -57,6 +57,6 @@ public class MainStopWatch {
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
-        return arr;
+        //return arr;
     }
 }

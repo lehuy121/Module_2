@@ -4,10 +4,6 @@ public class StopWatch {
     private long startTime;
     private long endTime;
 
-    protected StopWatch() {
-        this.getStartTime();
-    }
-
     protected long getStartTime() {
         return this.startTime;
     }
