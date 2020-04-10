@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/MainTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/IllegalTriangleException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/RemoveElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/RemoveElementInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/SumColsNumberIn2DArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2mang_va_phuong_thuc/baitap/UsingIllegalTriangleException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/Fan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/MainStopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/MainStopWatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3lop_va_doi_tuong/baitap/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +46,13 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainStopWatch">
-    <configuration name="MainFan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_3lop_va_doi_tuong.baitap.MainFan" />
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_4ke_thua.thuchanh.Main" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_3lop_va_doi_tuong.baitap.*" />
+          <option name="PATTERN" value="_4ke_thua.thuchanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +60,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainQuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_3lop_va_doi_tuong.baitap.MainQuadraticEquation" />
+    <configuration name="MainCircleCylinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_4ke_thua.baitap.MainCircleCylinder" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_3lop_va_doi_tuong.baitap.*" />
+          <option name="PATTERN" value="_4ke_thua.baitap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPoint2D3D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_4ke_thua.baitap.MainPoint2D3D" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_4ke_thua.baitap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,26 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2mang_va_phuong_thuc.baitap.RemoveElementInArray" />
-      <module name="JavaCore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2mang_va_phuong_thuc.baitap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainPoint2D3D" />
+        <item itemvalue="Application.MainCircleCylinder" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainStopWatch" />
         <item itemvalue="Application.MainTriangle" />
-        <item itemvalue="Application.MainFan" />
-        <item itemvalue="Application.RemoveElementInArray" />
-        <item itemvalue="Application.MainQuadraticEquation" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +141,7 @@
       <workItem from="1586484327422" duration="296000" />
       <workItem from="1586484674271" duration="1059000" />
       <workItem from="1586485777886" duration="421000" />
-      <workItem from="1586486239820" duration="10527000" />
+      <workItem from="1586486239820" duration="24738000" />
     </task>
     <servers />
   </component>
@@ -161,46 +153,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586503846226">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586528170939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586503846226" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586528170939" />
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1586362435958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1586362435958" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586508867437">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586528736163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586508867437" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586508867437">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586528736163" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586528736147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586508867437" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586508867436">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586528736147" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586528736147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586508867436" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586508867437">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586528736147" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586528736147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586508867437" />
-    <state width="1323" height="190" key="GridCell.Tab.1.bottom" timestamp="1586447592031">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586528736147" />
+    <state width="1323" height="213" key="GridCell.Tab.1.bottom" timestamp="1586527277843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586447592031" />
-    <state width="1323" height="190" key="GridCell.Tab.1.center" timestamp="1586447592030">
+    <state width="1323" height="213" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586527277843" />
+    <state width="1323" height="213" key="GridCell.Tab.1.center" timestamp="1586527277827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586447592030" />
-    <state width="1323" height="190" key="GridCell.Tab.1.left" timestamp="1586447592030">
+    <state width="1323" height="213" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586527277827" />
+    <state width="1323" height="213" key="GridCell.Tab.1.left" timestamp="1586527277827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586447592030" />
-    <state width="1323" height="190" key="GridCell.Tab.1.right" timestamp="1586447592031">
+    <state width="1323" height="213" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586527277827" />
+    <state width="1323" height="213" key="GridCell.Tab.1.right" timestamp="1586527277827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="190" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586447592031" />
+    <state width="1323" height="213" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586527277827" />
     <state x="28" y="0" width="1277" height="708" key="SettingsEditor" timestamp="1586487364654">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
