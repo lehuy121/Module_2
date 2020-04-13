@@ -1,6 +1,8 @@
 package _4ke_thua.thuchanh;
 
-public class Square extends Rectangle {
+import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
+
+public class Square extends Rectangle implements Resizeable{
 
     public Square() {
 
@@ -38,5 +40,9 @@ public class Square extends Rectangle {
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+    @Override
+    public void resize(double percent) {
+        System.out.println("Square Area After Resize: "+ (this.getArea() + this.getArea() * (percent / 100)));
     }
 }

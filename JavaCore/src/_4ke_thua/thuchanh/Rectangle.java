@@ -1,6 +1,8 @@
 package _4ke_thua.thuchanh;
 
-public class Rectangle extends Shape {
+import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
+
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -17,6 +19,7 @@ public class Rectangle extends Shape {
         this.width = width;
         this.length = length;
     }
+
 
     public double getWidth() {
         return width;
@@ -41,6 +44,7 @@ public class Rectangle extends Shape {
     public double getPerimeter() {
         return 2 * (width + this.length);
     }
+
     @Override
     public String toString() {
         return "A Rectangle with width="
@@ -51,4 +55,8 @@ public class Rectangle extends Shape {
                 + super.toString();
     }
 
+    @Override
+    public void resize(double percent) {
+        System.out.println("Rectangle Area After Resize: " + (this.getArea() + this.getArea() * (percent / 100)));
+    }
 }

@@ -1,15 +1,20 @@
 package _4ke_thua.thuchanh;
 
-public class Circle extends Shape {
+import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
+
+public class Circle extends Shape implements Resizeable {
     private double radius;
-    protected Circle(){
-       this.radius = 1.0;
+
+    public Circle() {
+        this.radius = 1.0;
     }
-    protected Circle(double radius){
+
+    public Circle(double radius) {
         this.radius = radius;
     }
-    protected Circle(double radius, String color, boolean filled){
-        super(color,filled);
+
+    protected Circle(double radius, String color, boolean filled) {
+        super(color, filled);
         this.radius = radius;
     }
 
@@ -20,18 +25,26 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
     public double getArea() {
         return radius * radius * Math.PI;
     }
+
     public double getPerimeter() {
         return 2 * radius * Math.PI;
     }
+
     @Override
     public String toString() {
         return "A Circle with radius="
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        System.out.println("Circle Area After Resize: "+ (this.getArea() + this.getArea() * (percent / 100)));
     }
 
 }
