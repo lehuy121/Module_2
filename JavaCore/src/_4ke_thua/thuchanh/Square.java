@@ -1,8 +1,9 @@
 package _4ke_thua.thuchanh;
 
+import _5advanced_object_oriented_design.baitap.colorable.Colorable;
 import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
 
-public class Square extends Rectangle implements Resizeable{
+public class Square extends Rectangle implements Resizeable, Colorable {
 
     public Square() {
 
@@ -44,5 +45,10 @@ public class Square extends Rectangle implements Resizeable{
     @Override
     public void resize(double percent) {
         System.out.println("Square Area After Resize: "+ (this.getArea() + this.getArea() * (percent / 100)));
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four side");
     }
 }
