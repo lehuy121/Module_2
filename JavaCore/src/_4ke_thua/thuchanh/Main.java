@@ -2,20 +2,20 @@ package _4ke_thua.thuchanh;
 
 public class Main {
     public static void main(String[] args) {
-        testShape();
+       // testShape();
         testCircle();
         testRectangle();
         testSquare();
 
 
     }
-    static void testShape(){
+    /*static void testShape(){
         Shape shape = new Shape();
         System.out.println(shape);
 
         shape = new Shape("red", false);
         System.out.println(shape.toString());
-    }
+    }*/
     static void testCircle(){
         Circle circle = new Circle();
         System.out.println(circle);

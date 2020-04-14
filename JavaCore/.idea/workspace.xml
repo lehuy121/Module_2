@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_5advanced_object_oriented_design/baitap/resizeable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_5advanced_object_oriented_design/baitap/resizeable/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/NhapMonLapTrinh/BaiTap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_5advanced_object_oriented_design/implicit_casting" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Module_2\JavaCore\src\_5advanced_object_oriented_design\implicit_casting" />
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\BaiTap" />
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.thuchanh.comparable.Main" />
+    <configuration name="Child" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.implicit_casting.Child" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.thuchanh.comparable.*" />
+          <option name="PATTERN" value="_5advanced_object_oriented_design.implicit_casting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,7 +95,7 @@
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.baitap.resizeable.*" />
+          <option name="PATTERN" value="_5advanced_object_oriented_design.baitap.resizeable.Resizeable" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,10 +119,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Child" />
         <item itemvalue="Application.AbstractAndInterfaceTests" />
         <item itemvalue="Application.MineSweeper" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,7 @@
       <workItem from="1586743628362" duration="23734000" />
       <workItem from="1586827353733" duration="2858000" />
       <workItem from="1586831407352" duration="1304000" />
-      <workItem from="1586832799511" duration="3463000" />
+      <workItem from="1586832799511" duration="9403000" />
     </task>
     <servers />
   </component>
@@ -164,46 +164,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586794566073">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586859101210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586794566073" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586859101210" />
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1586362435958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1586362435958" />
-    <state width="1323" height="297" key="GridCell.Tab.0.bottom" timestamp="1586852150607">
+    <state x="339" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586855799938">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="297" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
-    <state width="1323" height="297" key="GridCell.Tab.0.center" timestamp="1586852150607">
+    <state x="339" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1586855799938" />
+    <state width="1323" height="119" key="GridCell.Tab.0.bottom" timestamp="1586859163893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="297" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
-    <state width="1323" height="297" key="GridCell.Tab.0.left" timestamp="1586852150607">
+    <state width="1323" height="119" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586859163893" />
+    <state width="1323" height="119" key="GridCell.Tab.0.center" timestamp="1586859163892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="297" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
-    <state width="1323" height="297" key="GridCell.Tab.0.right" timestamp="1586852150607">
+    <state width="1323" height="119" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586859163892" />
+    <state width="1323" height="119" key="GridCell.Tab.0.left" timestamp="1586859163892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="297" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
-    <state width="1323" height="213" key="GridCell.Tab.1.bottom" timestamp="1586795800120">
+    <state width="1323" height="119" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586859163892" />
+    <state width="1323" height="119" key="GridCell.Tab.0.right" timestamp="1586859163892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
-    <state width="1323" height="213" key="GridCell.Tab.1.center" timestamp="1586795800120">
+    <state width="1323" height="119" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586859163892" />
+    <state width="1323" height="288" key="GridCell.Tab.1.bottom" timestamp="1586857668039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
-    <state width="1323" height="213" key="GridCell.Tab.1.left" timestamp="1586795800120">
+    <state width="1323" height="288" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586857668039" />
+    <state width="1323" height="288" key="GridCell.Tab.1.center" timestamp="1586857668038">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
-    <state width="1323" height="213" key="GridCell.Tab.1.right" timestamp="1586795800120">
+    <state width="1323" height="288" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586857668038" />
+    <state width="1323" height="288" key="GridCell.Tab.1.left" timestamp="1586857668038">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
+    <state width="1323" height="288" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586857668038" />
+    <state width="1323" height="288" key="GridCell.Tab.1.right" timestamp="1586857668039">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="288" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586857668039" />
     <state x="28" y="0" width="1277" height="708" key="SettingsEditor" timestamp="1586832851529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
