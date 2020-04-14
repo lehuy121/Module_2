@@ -1,13 +1,13 @@
 package _4ke_thua.thuchanh;
 
 import _5advanced_object_oriented_design.baitap.colorable.Colorable;
-import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
 
-public class Square extends Rectangle implements Resizeable, Colorable {
+public class Square extends Rectangle implements Colorable {
 
     public Square() {
 
     }
+
     public Square(double side) {
         super(side, side);
     }
@@ -15,7 +15,6 @@ public class Square extends Rectangle implements Resizeable, Colorable {
     public Square(String color, boolean filled, double side) {
         super(color, filled, side, side);
     }
-
 
 
     public double getSide() {
@@ -26,6 +25,7 @@ public class Square extends Rectangle implements Resizeable, Colorable {
         setWidth(side);
         setLength(side);
     }
+
     @Override
     public void setWidth(double width) {
         setSide(width);
@@ -35,6 +35,7 @@ public class Square extends Rectangle implements Resizeable, Colorable {
     public void setLength(double length) {
         setSide(length);
     }
+
     @Override
     public String toString() {
         return "A Square with side="
@@ -42,10 +43,11 @@ public class Square extends Rectangle implements Resizeable, Colorable {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
     @Override
     public void resize(double percent) {
-        System.out.println("Square Before Resize: "+ this.getArea());
-        System.out.println("Square Area After Resize: "+ (this.getArea() + this.getArea() * (percent / 100)));
+        System.out.println("Square Before Resize: " + this.getArea());
+        System.out.println("Square Area After Resize: " + (this.getArea() + this.getArea() * (percent / 100)));
     }
 
     @Override

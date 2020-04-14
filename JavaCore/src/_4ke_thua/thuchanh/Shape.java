@@ -1,8 +1,9 @@
 package _4ke_thua.thuchanh;
 
+import _5advanced_object_oriented_design.baitap.colorable.Colorable;
 import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
 
-public abstract class Shape implements Resizeable {
+public abstract class Shape implements Resizeable{
     private String color;
     private boolean filled;
 
@@ -25,9 +26,8 @@ public abstract class Shape implements Resizeable {
     }
 
     public boolean isFilled() {
-        return filled;
+        return this.filled;
     }
-
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
@@ -42,4 +42,5 @@ public abstract class Shape implements Resizeable {
 
     @Override
     public abstract void resize(double percent);
+    public abstract double getPerimeter();
 }

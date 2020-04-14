@@ -1,8 +1,8 @@
 package _4ke_thua.thuchanh;
 
-import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
+import _5advanced_object_oriented_design.baitap.colorable.Colorable;
 
-public class Rectangle extends Shape implements Resizeable {
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -40,7 +40,7 @@ public class Rectangle extends Shape implements Resizeable {
     public double getArea() {
         return width * this.length;
     }
-
+    @Override
     public double getPerimeter() {
         return 2 * (width + this.length);
     }

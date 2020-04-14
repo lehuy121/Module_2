@@ -1,8 +1,6 @@
 package _4ke_thua.thuchanh;
 
-import _5advanced_object_oriented_design.baitap.resizeable.Resizeable;
-
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape {
     private double radius;
 
     public Circle() {
@@ -13,7 +11,7 @@ public class Circle extends Shape implements Resizeable {
         this.radius = radius;
     }
 
-    protected Circle(double radius, String color, boolean filled) {
+    public Circle(double radius, String color, boolean filled) {
         super(color, filled);
         this.radius = radius;
     }
@@ -29,7 +27,7 @@ public class Circle extends Shape implements Resizeable {
     public double getArea() {
         return radius * radius * Math.PI;
     }
-
+    @Override
     public double getPerimeter() {
         return 2 * radius * Math.PI;
     }
@@ -44,8 +42,8 @@ public class Circle extends Shape implements Resizeable {
 
     @Override
     public void resize(double percent) {
-        System.out.println("Circle Before Resize: "+ this.getArea());
-        System.out.println("Circle Area After Resize: "+ (this.getArea() + this.getArea() * (percent / 100)));
+        System.out.println("Circle Before Resize: " + this.getArea());
+        System.out.println("Circle Area After Resize: " + (this.getArea() + this.getArea() * (percent / 100)));
     }
 
 }
