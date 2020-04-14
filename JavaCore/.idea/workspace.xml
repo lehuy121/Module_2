@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_5advanced_object_oriented_design/baitap/resizeable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_5advanced_object_oriented_design/baitap/resizeable/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +50,13 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.thuchanh.AbstractAndInterfaceTests" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.thuchanh.edible.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleComparatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.thuchanh.comparator.CircleComparatorTest" />
-      <module name="JavaCore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.thuchanh.comparator.*" />
+          <option name="PATTERN" value="_5advanced_object_oriented_design.thuchanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,13 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MineSweeper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2mang_va_phuong_thuc.thuchanh.MineSweeper" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_2mang_va_phuong_thuc.thuchanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.CircleComparatorTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AbstractAndInterfaceTests" />
+        <item itemvalue="Application.MineSweeper" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +149,10 @@
       <workItem from="1586571433518" duration="11987000" />
       <workItem from="1586692157142" duration="4338000" />
       <workItem from="1586704236619" duration="926000" />
-      <workItem from="1586743628362" duration="23643000" />
+      <workItem from="1586743628362" duration="23734000" />
+      <workItem from="1586827353733" duration="2858000" />
+      <workItem from="1586831407352" duration="1304000" />
+      <workItem from="1586832799511" duration="3463000" />
     </task>
     <servers />
   </component>
@@ -166,46 +172,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1586362435958" />
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1586795729137">
+    <state width="1323" height="297" key="GridCell.Tab.0.bottom" timestamp="1586852150607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586795729137" />
-    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1586795729137">
+    <state width="1323" height="297" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
+    <state width="1323" height="297" key="GridCell.Tab.0.center" timestamp="1586852150607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586795729137" />
-    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1586795729137">
+    <state width="1323" height="297" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
+    <state width="1323" height="297" key="GridCell.Tab.0.left" timestamp="1586852150607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586795729137" />
-    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1586795729137">
+    <state width="1323" height="297" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
+    <state width="1323" height="297" key="GridCell.Tab.0.right" timestamp="1586852150607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586795729137" />
-    <state width="1323" height="213" key="GridCell.Tab.1.bottom" timestamp="1586778534471">
+    <state width="1323" height="297" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586852150607" />
+    <state width="1323" height="213" key="GridCell.Tab.1.bottom" timestamp="1586795800120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586778534471" />
-    <state width="1323" height="213" key="GridCell.Tab.1.center" timestamp="1586778534471">
+    <state width="1323" height="213" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
+    <state width="1323" height="213" key="GridCell.Tab.1.center" timestamp="1586795800120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586778534471" />
-    <state width="1323" height="213" key="GridCell.Tab.1.left" timestamp="1586778534471">
+    <state width="1323" height="213" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
+    <state width="1323" height="213" key="GridCell.Tab.1.left" timestamp="1586795800120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586778534471" />
-    <state width="1323" height="213" key="GridCell.Tab.1.right" timestamp="1586778534471">
+    <state width="1323" height="213" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
+    <state width="1323" height="213" key="GridCell.Tab.1.right" timestamp="1586795800120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="213" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586778534471" />
-    <state x="28" y="0" width="1277" height="708" key="SettingsEditor" timestamp="1586487364654">
+    <state width="1323" height="213" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586795800120" />
+    <state x="28" y="0" width="1277" height="708" key="SettingsEditor" timestamp="1586832851529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="28" y="0" width="1277" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586487364654" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586743630083">
+    <state x="28" y="0" width="1277" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832851529" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586832796304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586743630083" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586832796304" />
     <state x="244" y="101" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586774538450">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

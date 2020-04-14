@@ -44,6 +44,7 @@ public class Square extends Rectangle implements Resizeable, Colorable {
     }
     @Override
     public void resize(double percent) {
+        System.out.println("Square Before Resize: "+ this.getArea());
         System.out.println("Square Area After Resize: "+ (this.getArea() + this.getArea() * (percent / 100)));
     }
 

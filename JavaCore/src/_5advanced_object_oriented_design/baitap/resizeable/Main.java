@@ -9,11 +9,23 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-       /* Viết một chương trình tạo ra một mảng cách hình. Với mỗi phần tử trong mảng, tăng kích thước phần tử đó lên theo một tỉ lệ ngẫu nhiên từ 1-100.
-        Thông báo ra màn hình diện tích của phần tử trước và sau khi tăng kích thước.*/
-        testCircle();
+        /*testCircle();
         testRectangle();
-        testSquare();
+        testSquare();*/
+
+        test();
+    }
+    static void test(){
+        Resizeable[] resizeables = new Resizeable[3];
+        resizeables[0] = new Circle(3.0);
+        resizeables[1] = new Rectangle(3.0,5.6);
+        resizeables[2] = new Square(10.0);
+
+        for (Resizeable resizeable: resizeables) {
+            resizeable.resize(randomNumber());
+            System.out.println("");
+        }
+
     }
 
 
