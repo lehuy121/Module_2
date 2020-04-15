@@ -1,8 +1,6 @@
 package _6data_structures_and_algorithms.thuchanh.simple_linkedlist;
 
 
-import jdk.nashorn.internal.ir.Node;
-
 public class MyLinkedList {
     private Node head;
     private int numNodes;

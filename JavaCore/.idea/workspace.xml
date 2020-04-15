@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_4ke_thua/thuchanh/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_5advanced_object_oriented_design/baitap/colorable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_5advanced_object_oriented_design/baitap/colorable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/array_list/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/array_list/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/thuchanh/simple_linkedlist/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/thuchanh/simple_linkedlist/MyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +31,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -52,13 +54,13 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Child" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.implicit_casting.Child" />
+  <component name="RunManager" selected="JUnit.CylinderTest">
+    <configuration name="MyLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_6data_structures_and_algorithms.baitap.linked_list.MyLinkedListTest" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.implicit_casting.*" />
+          <option name="PATTERN" value="_6data_structures_and_algorithms.baitap.linked_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.baitap.colorable.Main" />
+    <configuration name="MyListTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_6data_structures_and_algorithms.baitap.array_list.MyListTest" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.baitap.colorable.*" />
+          <option name="PATTERN" value="_6data_structures_and_algorithms.baitap.array_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,52 +81,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.baitap.resizeable.Main" />
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5advanced_object_oriented_design.baitap.resizeable.Resizeable" />
+          <option name="PATTERN" value="_7clean_code.thuchanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="_7clean_code.thuchanh" />
+      <option name="MAIN_CLASS_NAME" value="_7clean_code.thuchanh.CalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_6data_structures_and_algorithms.thuchanh.simple_list.MyListTest" />
+    <configuration name="CylinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_6data_structures_and_algorithms.thuchanh.simple_list.*" />
+          <option name="PATTERN" value="_7clean_code.thuchanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="_7clean_code.thuchanh" />
+      <option name="MAIN_CLASS_NAME" value="_7clean_code.thuchanh.CylinderTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_6data_structures_and_algorithms.thuchanh.simple_linkedlist.TestMyLinkedList" />
+    <configuration name="FizzBuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_6data_structures_and_algorithms.thuchanh.simple_linkedlist.*" />
+          <option name="PATTERN" value="_7clean_code.thuchanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="_7clean_code.thuchanh" />
+      <option name="MAIN_CLASS_NAME" value="_7clean_code.thuchanh.FizzBuzzTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.TestMyLinkedList" />
-        <item itemvalue="Application.MyListTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Child" />
+        <item itemvalue="JUnit.CylinderTest" />
+        <item itemvalue="JUnit.FizzBuzzTest" />
+        <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="Application.MyLinkedListTest" />
+        <item itemvalue="Application.MyListTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +162,8 @@
       <workItem from="1586743628362" duration="23734000" />
       <workItem from="1586827353733" duration="2858000" />
       <workItem from="1586831407352" duration="1304000" />
-      <workItem from="1586832799511" duration="19782000" />
+      <workItem from="1586832799511" duration="19968000" />
+      <workItem from="1586915063829" duration="38669000" />
     </task>
     <servers />
   </component>
@@ -166,10 +175,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586883814677">
+    <state x="413" y="120" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586937864961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586883814677" />
+    <state x="413" y="120" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586937864961" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586950481229">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586950481229" />
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1586362435958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -178,46 +191,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1586855799938" />
-    <state width="1323" height="234" key="GridCell.Tab.0.bottom" timestamp="1586885053837">
+    <state width="1323" height="132" key="GridCell.Tab.0.bottom" timestamp="1586963215224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="234" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586885053837" />
-    <state width="1323" height="234" key="GridCell.Tab.0.center" timestamp="1586885053837">
+    <state width="1323" height="132" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586963215224" />
+    <state width="1323" height="132" key="GridCell.Tab.0.center" timestamp="1586963215224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="234" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586885053837" />
-    <state width="1323" height="234" key="GridCell.Tab.0.left" timestamp="1586885053837">
+    <state width="1323" height="132" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586963215224" />
+    <state width="1323" height="132" key="GridCell.Tab.0.left" timestamp="1586963215224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="234" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586885053837" />
-    <state width="1323" height="234" key="GridCell.Tab.0.right" timestamp="1586885053837">
+    <state width="1323" height="132" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586963215224" />
+    <state width="1323" height="132" key="GridCell.Tab.0.right" timestamp="1586963215224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="234" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586885053837" />
-    <state width="1323" height="288" key="GridCell.Tab.1.bottom" timestamp="1586857668039">
+    <state width="1323" height="132" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586963215224" />
+    <state width="1323" height="288" key="GridCell.Tab.1.bottom" timestamp="1586920600980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="288" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586857668039" />
-    <state width="1323" height="288" key="GridCell.Tab.1.center" timestamp="1586857668038">
+    <state width="1323" height="288" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586920600980" />
+    <state width="1323" height="288" key="GridCell.Tab.1.center" timestamp="1586920600980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="288" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586857668038" />
-    <state width="1323" height="288" key="GridCell.Tab.1.left" timestamp="1586857668038">
+    <state width="1323" height="288" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586920600980" />
+    <state width="1323" height="288" key="GridCell.Tab.1.left" timestamp="1586920600980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="288" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586857668038" />
-    <state width="1323" height="288" key="GridCell.Tab.1.right" timestamp="1586857668039">
+    <state width="1323" height="288" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586920600980" />
+    <state width="1323" height="288" key="GridCell.Tab.1.right" timestamp="1586920600980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="288" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586857668039" />
+    <state width="1323" height="288" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586920600980" />
     <state x="28" y="0" width="1277" height="708" key="SettingsEditor" timestamp="1586832851529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="28" y="0" width="1277" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586832851529" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586832796304">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586915065040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586832796304" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586915065040" />
+    <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586962632009">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1586962632009" />
     <state x="244" y="101" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586774538450">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -230,5 +247,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1586362596884" />
+    <state x="389" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586945995286">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1586945995286" />
   </component>
 </project>
