@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/array_list/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/array_list/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/array_list/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/array_list/MyListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +53,16 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TennisGameTest">
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MyListTest">
+    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_6data_structures_and_algorithms.baitap.array_list.MyListTest" />
       <module name="JavaCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_7clean_code.thuchanh.*" />
+          <option name="PATTERN" value="_6data_structures_and_algorithms.baitap.array_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="_7clean_code.thuchanh" />
-      <option name="MAIN_CLASS_NAME" value="_7clean_code.thuchanh.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyListTest" />
         <item itemvalue="JUnit.TennisGameTest" />
         <item itemvalue="JUnit.TennisGameTest.checkAllScores" />
         <item itemvalue="JUnit.CylinderTest" />
         <item itemvalue="JUnit.FizzBuzzTest" />
-        <item itemvalue="JUnit.CalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +166,7 @@
       <workItem from="1586831407352" duration="1304000" />
       <workItem from="1586832799511" duration="19968000" />
       <workItem from="1586915063829" duration="39715000" />
-      <workItem from="1587004388733" duration="7420000" />
+      <workItem from="1587004388733" duration="15309000" />
     </task>
     <servers />
   </component>
@@ -202,22 +202,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="257" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1587007220829" />
-    <state width="1323" height="382" key="GridCell.Tab.0.bottom" timestamp="1587011826692">
+    <state width="1323" height="496" key="GridCell.Tab.0.bottom" timestamp="1587021434424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="382" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587011826692" />
-    <state width="1323" height="382" key="GridCell.Tab.0.center" timestamp="1587011826692">
+    <state width="1323" height="496" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587021434424" />
+    <state width="1323" height="496" key="GridCell.Tab.0.center" timestamp="1587021434424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="382" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587011826692" />
-    <state width="1323" height="382" key="GridCell.Tab.0.left" timestamp="1587011826692">
+    <state width="1323" height="496" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587021434424" />
+    <state width="1323" height="496" key="GridCell.Tab.0.left" timestamp="1587021434424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="382" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587011826692" />
-    <state width="1323" height="382" key="GridCell.Tab.0.right" timestamp="1587011826692">
+    <state width="1323" height="496" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587021434424" />
+    <state width="1323" height="496" key="GridCell.Tab.0.right" timestamp="1587021434424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="382" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587011826692" />
+    <state width="1323" height="496" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587021434424" />
     <state width="1323" height="288" key="GridCell.Tab.1.bottom" timestamp="1586964617890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -10,7 +10,7 @@ public class MyList<E> {
 
     MyList() {
         this.elements = new Object[DEFAULT_CAPACITY];
-        size = DEFAULT_CAPACITY;
+      //  size = DEFAULT_CAPACITY;
     }
 
     MyList(int initCapacity) {
@@ -18,27 +18,34 @@ public class MyList<E> {
             throw new IllegalArgumentException("Illegal Capacity: " + initCapacity);
         }
         this.elements = new Object[initCapacity];
-        size = initCapacity;
+      //  size = initCapacity;
     }
 
-   /* public void add(int index, E element) {
-        if (index < 0 || index > size()) {
-            throw new IndexOutOfBoundsException();
-        }
-        ensureCapacity(1);
-        for (int i = size - 1; i >= index; i--) {
-            elements[i + 1] = elements[i];
-            elements[index] = element;
-        }
-        size++;
-    }*/
     public void add(int index, E element) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        } else if (elements.length == size) {
+            ensureCapacity(1);
+        }
+
+        if (elements[index] == null) {
+            elements[index] = element;
+            size++;
+        } else {
+            for (int i = size + 1; i >= index; i--) {
+                elements[i] = elements[i - 1];
+            }
+            elements[index] = element;
+            size++;
+        }
+    }
+   /* public void add(int index, E element) {
         ensureCapacity(1);
         System.arraycopy(elements, index, elements, index + 1,
                 size - index);
         elements[index] = element;
         size++;
-    }
+    }*/
 
     public E remove(int index) {
         IndexOutOfBound(index);
@@ -58,6 +65,7 @@ public class MyList<E> {
 
         return tmp;
     }
+
     public boolean contains(Object o) {
         return indexOf(o) >= 0;
     }
@@ -74,9 +82,13 @@ public class MyList<E> {
         }
         return -1;
     }
+
     public boolean add(E e) {
-        ensureCapacity( 1);
-        elements[size++] = e;
+        if (elements.length == size) {
+            ensureCapacity(1);
+        }
+        elements[size] = e;
+        size++;
         return true;
     }
 
@@ -89,6 +101,7 @@ public class MyList<E> {
         IndexOutOfBound(i);
         return (E) elements[i];
     }
+
     public void clear() {
         for (int i = 0; i < size; i++)
             elements[i] = null;
