@@ -16,34 +16,43 @@ public class TennisGame {
     public static final String THIRTY = "Thirty";
     public static final String FORTY = "Forty";
     public static final int DEUCE_SCORE = 4;
+    public static final int LOVE_NUMBER = 0;
+    public static final int FIFTEEN_NUMBER = 1;
+    public static final int THIRTY_NUMBER = 2;
+    public static final int FORTY_NUMBER = 3;
     public static String score;
     public static int tempScore;
+
 
     public static String getScore(String firstPlayer, String secondPlayer, int firstPlayerScore, int secondPlayerScore) {
         score = "";
         int tempScore = 0;
-        if (firstPlayerScore == secondPlayerScore) {
+        boolean isScoreEquals = firstPlayerScore == secondPlayerScore;
+        if (isScoreEquals) {
             scoreForAll(firstPlayerScore);
-        } else if (firstPlayerScore >= DEUCE_SCORE || secondPlayerScore >= DEUCE_SCORE) {
-            checkWin(firstPlayerScore, secondPlayerScore);
         } else {
-            calculateScore(firstPlayerScore, secondPlayerScore);
+            boolean isAdvanceScore = firstPlayerScore >= DEUCE_SCORE || secondPlayerScore >= DEUCE_SCORE;
+            if (isAdvanceScore) {
+                checkWin(firstPlayerScore, secondPlayerScore);
+            } else {
+                calculateScore(firstPlayerScore, secondPlayerScore);
+            }
         }
         return score;
     }
 
     static void scoreForAll(int playerScore) {
         switch (playerScore) {
-            case 0:
+            case LOVE_NUMBER:
                 score = LOVE_ALL;
                 break;
-            case 1:
+            case FIFTEEN_NUMBER:
                 score = FIFTEEN_ALL;
                 break;
-            case 2:
+            case THIRTY_NUMBER:
                 score = THIRTY_ALL;
                 break;
-            case 3:
+            case FORTY_NUMBER:
                 score = FORTY_ALL;
                 break;
             default:
@@ -61,16 +70,16 @@ public class TennisGame {
                 tempScore = secondPlayerScore;
             }
             switch (tempScore) {
-                case 0:
+                case LOVE_NUMBER:
                     score += LOVE;
                     break;
-                case 1:
+                case FIFTEEN_NUMBER:
                     score += FIFTEEN;
                     break;
-                case 2:
+                case THIRTY_NUMBER:
                     score += THIRTY;
                     break;
-                case 3:
+                case FORTY_NUMBER:
                     score += FORTY;
                     break;
             }

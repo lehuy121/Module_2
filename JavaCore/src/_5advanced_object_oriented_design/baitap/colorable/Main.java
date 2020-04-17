@@ -17,7 +17,7 @@ public class Main {
         shapes[2] = new Square("white", true, 4.7);
         shapes[3] = new Circle(4.6, "white", true);
         for (Shape shape : shapes) {
-            if (shape instanceof Square && shape.isFilled()) {
+            if (shape instanceof Square) {
                 System.out.print(shape.getPerimeter());
                 ((Square) shape).howToColor();
             } else {

@@ -1,8 +1,4 @@
 package _6data_structures_and_algorithms.baitap.linked_list;
-
-import com.sun.corba.se.spi.activation.RepositoryPackage.StringSeqHolder;
-
-import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class MyLinkedList<E> {
@@ -27,9 +23,10 @@ public class MyLinkedList<E> {
     }
 
     public void addFirst(E element) {
-        Node temp = head;
-        head = new Node(element);
-        head.next = temp;
+       // Node temp = head;
+        Node temp = new Node(element);
+        temp.next = head;
+        head = temp;
         numNode++;
     }
 
@@ -143,6 +140,8 @@ public class MyLinkedList<E> {
         }
         return -1;
     }
+
+    // dang bug
     public E getFirst(){
          Node temp = head;
         if (temp == null)
