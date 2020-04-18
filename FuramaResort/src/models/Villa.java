@@ -1,6 +1,6 @@
 package models;
 
-public class Villa extends Services  {
+public class Villa extends Services {
     private String roomStandard;
     private String descriptionOtherAmenities;
     private double poolArea;
@@ -53,17 +53,16 @@ public class Villa extends Services  {
 
     @Override
     public String showInfo() {
-        return "\n Id Server: " + super.getId() +
-                "\n Service Name: " + super.getServiceName() +
-                "\n Used Area: " + super.getUsedArea() +
-                "\n Rent Cost: " + super.getRentCost() +
-                "\n Quantity Of People: " + super.getMaxQuantityOfPeople() +
-                "\n Rent Type: " + super.getRenType() +
-                "\n Room Standard: " + this.getRoomStandard() +
-                "\n Description Other Amenities: " + this.getDescriptionOtherAmenities() +
-                "\n Pool Area: " + this.getPoolArea() +
-                "\n Floor Number: " + this.getFloorNumber()
-                ;
+        return "Id Service: " + super.getId() +
+                ", Service Name: " + super.getServiceName() +
+                ", Used Area: " + super.getUsedArea() +
+                ", Rent Cost: " + super.getRentCost() +
+                ", Quantity Of People: " + super.getMaxQuantityOfPeople() +
+                ", Rent Type: " + super.getRenType() +
+                ", Room Standard: " + this.getRoomStandard() +
+                ", Description Other Amenities: " + this.getDescriptionOtherAmenities() +
+                ", Pool Area: " + this.getPoolArea() +
+                ", Floor Number: " + this.getFloorNumber();
     }
 
 }

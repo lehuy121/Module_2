@@ -1,7 +1,6 @@
 package controllers;
 
 import commons.ReadFile;
-import commons.ReadFile1;
 import commons.WriteFile;
 import models.House;
 import models.Room;
@@ -11,7 +10,7 @@ import models.Villa;
 import java.util.Scanner;
 import java.util.UUID;
 
-public class MainController {
+public class Test implements TestRefactorInteface {
 
 
     public static void main(String[] args) {
@@ -79,7 +78,7 @@ public class MainController {
         System.out.println("Enter Max Quantity Of People");
         villa.setMaxQuantityOfPeople(scan.nextInt());
 
-        // scan.nextLine(); // nhận phím enter làm giá trị (fix bug nextInt mà sau nó là nextLine())
+       // scan.nextLine(); // nhận phím enter làm giá trị (fix bug nextInt mà sau nó là nextLine())
         System.out.println("Enter Rent Type");
         villa.setRenType(scan.nextLine());
 
@@ -105,10 +104,9 @@ public class MainController {
         String poolArea = Double.toString(((Villa) villa).getPoolArea());
         String floorNumber = Integer.toString(((Villa) villa).getFloorNumber());
 
-        String[] data = {id, serviceName, usedArea, rentCost, maxQuantityPeople, renType, roomStandard, descriptionOtherAmenities, poolArea, floorNumber};
-        // String[] data = {villa.showInfo()};
-        WriteFile.writeData(VILLA_FILE_NAME, data);
-
+       String[] data = {id, serviceName, usedArea, rentCost, maxQuantityPeople, renType, roomStandard, descriptionOtherAmenities, poolArea, floorNumber};
+       // String[] data = {villa.showInfo()};
+        WriteFile.writeData(VILLA_FILE_NAME,data);
     }
 
     private static void addNewHouse() {
@@ -208,11 +206,7 @@ public class MainController {
 
     private static void showAllVilla() {
 
-        // ReadFile.readData(VILLA_FILE_NAME);
-//        String[] villa = new String[]{"id", "serviceName",
-//                "usedArea", "rentCost", "maxQuantityOfPeople",
-//                "renType", "roomStandard", "descriptionOtherAmenities", "poolArea", "floorNumber"};
-        ReadFile1.readVillaFile();
+        ReadFile.readData(VILLA_FILE_NAME);
     }
 
     private static void showAllHouse() {
@@ -278,38 +272,6 @@ public class MainController {
         System.out.println("Exit Program");
         System.exit(0);
     }
-
     static Scanner scan = new Scanner(System.in);
-    public static final String VILLA_FILE_NAME = "Villa";
-    public static final String HOUSE_FILE_NAME = "House";
-    public static final String ROOM_FILE_NAME = "Room";
 
-    static final String MAIN_MENU = "----------Main Menu----------";
-    static final String ADD_NEW_SERVICE = "1. Add New Service";
-    static final String SHOW_SERVICES = "2. Show Services";
-    static final String ADD_NEW_CUSTOMER = "3. Add New Customer";
-    static final String SHOW_INFO_OF_CUSTOMER = "4. Show Information of Customer";
-    static final String ADD_NEW_BOOKING = "5. Add New Booking";
-    static final String SHOW_INFO_OF_EMPLOYEE = "6. Show Information of Employee";
-    static final String BOOKING_MOVIE_TICKET_4D = "7. Booking Movie Ticket 4D";
-    static final String FIND_EMPLOYEE = "8. Find Employee";
-    static final String EXIT = "9. Exit";
-
-    static final String ADD_NEW_SERVICE_MENU = "----------Add New Service Menu----------";
-    static final String ADD_NEW_VILLA = "1. Add New Villa";
-    static final String ADD_NEW_HOUSE = "2. Add New House";
-    static final String ADD_NEW_ROOM = "3. Add New Room";
-    static final String BACK_TO_MENU = "4. Back to menu";
-
-    static final String SHOW_SERVICE_MENU = "----------Show Service Menu----------";
-    static final String SHOW_ALL_VILLA = "1. Show all Villa";
-    static final String SHOW_ALL_HOUSE = "2. Show all House";
-    static final String SHOW_ALL_ROOM = "3. Show all Room";
-    static final String SHOW_ALL_NAME_VILLA_NOT_DUPLICATE = "4. Show All Name Villa Not Duplicate";
-    static final String SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE = "5. Show All Name House Not Duplicate";
-    static final String SHOW_ALL_NAME_ROOM_NOT_DUPLICATE = "6. Show All Name Room Not Duplicate";
-
-    static final String INPUT_DATA_VILLA = "----------Input Data Villa----------";
-    static final String INPUT_DATA_HOUSE = "----------Input Data House----------";
-    static final String INPUT_DATA_ROOM = "----------Input Data Room----------";
 }
