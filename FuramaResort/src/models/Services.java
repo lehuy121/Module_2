@@ -1,17 +1,18 @@
 package models;
 
-public abstract class Services implements ServiceIncluded {
+
+public abstract class Services implements DefineConstants{
     private String id;
     private String serviceName;
-    private double usedArea;
-    private double rentCost;
-    private int maxQuantityOfPeople;
+    private String usedArea;
+    private String rentCost;
+    private String maxQuantityOfPeople;
     private String renType;
 
     public Services() {
     }
 
-    public Services(String id, String serviceName, double usedArea, double rentCost, int maxQuantityOfPeople, String renType) {
+    public Services(String id, String serviceName, String usedArea, String rentCost, String maxQuantityOfPeople, String renType) {
         this.id = id;
         this.serviceName = serviceName;
         this.usedArea = usedArea;
@@ -36,27 +37,27 @@ public abstract class Services implements ServiceIncluded {
         this.serviceName = serviceName;
     }
 
-    public double getUsedArea() {
+    public String getUsedArea() {
         return usedArea;
     }
 
-    public void setUsedArea(double usedArea) {
+    public void setUsedArea(String usedArea) {
         this.usedArea = usedArea;
     }
 
-    public double getRentCost() {
+    public String getRentCost() {
         return rentCost;
     }
 
-    public void setRentCost(double rentCost) {
+    public void setRentCost(String rentCost) {
         this.rentCost = rentCost;
     }
 
-    public int getMaxQuantityOfPeople() {
+    public String getMaxQuantityOfPeople() {
         return maxQuantityOfPeople;
     }
 
-    public void setMaxQuantityOfPeople(int maxQuantityOfPeople) {
+    public void setMaxQuantityOfPeople(String maxQuantityOfPeople) {
         this.maxQuantityOfPeople = maxQuantityOfPeople;
     }
 
@@ -69,4 +70,7 @@ public abstract class Services implements ServiceIncluded {
     }
 
     public abstract String showInfo();
+    public abstract void addNewService();
+    public abstract void showAllService();
+    public abstract void showServiceNameNotDuplicate();
 }

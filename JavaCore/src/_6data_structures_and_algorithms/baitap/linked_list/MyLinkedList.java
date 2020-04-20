@@ -1,4 +1,5 @@
 package _6data_structures_and_algorithms.baitap.linked_list;
+
 import java.util.NoSuchElementException;
 
 public class MyLinkedList<E> {
@@ -22,11 +23,14 @@ public class MyLinkedList<E> {
 
     }
 
-    public void addFirst(E element) {
-       // Node temp = head;
-        Node temp = new Node(element);
-        temp.next = head;
-        head = temp;
+    public void addFirst(E e) {
+        Node newNode = new Node(e);
+        if (head == null) {
+            head = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
         numNode++;
     }
 
@@ -133,7 +137,7 @@ public class MyLinkedList<E> {
     public int indexOf(E element) {
         Node temp = head;
         for (int i = 0; i < numNode; i++) {
-            if(temp.data.equals(element)){
+            if (temp.data.equals(element)) {
                 return i;
             }
             temp = temp.next;
@@ -142,16 +146,17 @@ public class MyLinkedList<E> {
     }
 
     // dang bug
-    public E getFirst(){
-         Node temp = head;
+    public E getFirst() {
+        Node temp = head;
         if (temp == null)
             throw new NoSuchElementException();
-        return (E) temp.data;
+        return (E) head.getData();
+
     }
 
-    public E getLast(){
+    public E getLast() {
         Node temp = head;
-        if(head == null) {
+        if (head == null) {
             throw new NoSuchElementException();
         }
         while (temp.next != null) {
@@ -159,7 +164,8 @@ public class MyLinkedList<E> {
         }
         return (E) temp.data;
     }
-    public void clear(){
+
+    public void clear() {
         head = null;
     }
 

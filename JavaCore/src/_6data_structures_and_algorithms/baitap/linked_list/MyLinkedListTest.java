@@ -1,5 +1,7 @@
 package _6data_structures_and_algorithms.baitap.linked_list;
 
+import java.util.LinkedList;
+
 public class MyLinkedListTest {
     public static void main(String[] args) {
         class Student {
@@ -31,21 +33,31 @@ public class MyLinkedListTest {
                 this.name = name;
             }
         }
+        LinkedList a = new LinkedList();
         MyLinkedList<Student> myLinkedList = new MyLinkedList<>();
+        LinkedList<Student> linkedList = new LinkedList<>();
         Student student1 = new Student(1, "Huy");
         Student student2 = new Student(2, "Hai");
         Student student3 = new Student(3, "Ha");
         Student student4 = new Student(3, "Hoa");
         Student student5 = new Student(3, "Hoa");
-        myLinkedList.addFirst(student1);
-        myLinkedList.addFirst(student2);
+
+        linkedList.addFirst(student1);
+        linkedList.addFirst(student2);
+
+//        myLinkedList.addFirst(student1);
+//        myLinkedList.addFirst(student2);
 //        myLinkedList.addLast(student3);
 //        myLinkedList.add(3, student4);
-        System.out.println("First Element: "+myLinkedList.getFirst());
-        System.out.println("Last Element: "+myLinkedList.getLast());
+        for (int i = 0; i < linkedList.size(); i++) {
+            Student student = (Student) linkedList.get(i);
+            System.out.println(student.getName());
+        }
+        System.out.println("First Element: " + linkedList.getFirst());
+       // System.out.println("Last Element: "+myLinkedList.getLast());
 
 
-       // System.out.println(myLinkedList.constrains(student5));
+        // System.out.println(myLinkedList.constrains(student5));
         //System.out.println(myLinkedList.indexOf(student3));
 
         // myLinkedList.remove(student3);
@@ -57,11 +69,6 @@ public class MyLinkedListTest {
 //            Student student = (Student) cloneLinkedList.get(i);
 //            System.out.println(student.getName());
 //        }
-
-        for (int i = 0; i < myLinkedList.size(); i++) {
-            Student student = (Student) myLinkedList.get(i);
-            System.out.println(student.getName());
-        }
 
 
     }

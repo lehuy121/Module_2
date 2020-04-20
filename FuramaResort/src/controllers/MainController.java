@@ -1,34 +1,43 @@
 package controllers;
 
-import commons.ReadFile;
-import commons.ReadFile1;
-import commons.WriteFile;
-import models.House;
-import models.Room;
-import models.Services;
-import models.Villa;
+import models.*;
 
-import java.util.Scanner;
-import java.util.UUID;
-
-public class MainController {
-
+public class MainController implements DefineConstants {
+    public static final int MAIN_MENU_ADD_NEW_SERVICE = 1;
+    public static final int MAIN_MENU_SHOW_SERVICE = 2;
+    public static final int MAIN_MENU_EXIT = 9;
+    public static final int MENU_ADD_NEW_SERVICE_VILLA = 1;
+    public static final int MENU_ADD_NEW_SERVICE_HOUSE = 2;
+    public static final int MENU_ADD_NEW_SERVICE_ROOM = 3;
+    public static final int MENU_ADD_NEW_SERVICE_BACK_TO_MAIN_MENU = 4;
+    public static final int MENU_ADD_NEW_SERVICE_BACK_EXIT = 5;
+    public static final int MENU_SHOW_SERVICE_SHOW_ALL_VILLA = 1;
+    public static final int MENU_SHOW_SERVICE_SHOW_ALL_HOUSE = 2;
+    public static final int MENU_SHOW_SERVICE_SHOW_ALL_ROOM = 3;
+    public static final int MENU_SHOW_SERVICE_SHOW_ALL_NAME_VILLA_NOT_DUPLICATE = 4;
+    public static final int MENU_SHOW_SERVICE_SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE = 5;
+    public static final int MENU_SHOW_SERVICE_SHOW_ALL_NAME_ROM_NOT_DUPLICATE = 6;
+    public static final int MENU_SHOW_SERVICE_BACK_TO_MAIN_MENU = 7;
+    public static final int MENU_SHOW_SERVICE_EXIT = 8;
+    static Villa villa = new Villa();
+    static House house = new House();
+    static Room room = new Room();
 
     public static void main(String[] args) {
         displayMainMenu();
     }
 
-    static void displayMainMenu() {
+    private static void displayMainMenu() {
         mainMenuMessage();
         switch (choiceMenu()) {
-            case 1:
+            case MAIN_MENU_ADD_NEW_SERVICE:
                 addNewServices();
                 break;
-            case 2:
+            case MAIN_MENU_SHOW_SERVICE:
                 showServices();
                 break;
-            case 9:
-                System.out.println("Exit Program");
+            case MAIN_MENU_EXIT:
+                System.out.println(EXIT);
                 System.exit(0);
             default:
                 invalidChoiceMenu();
@@ -39,19 +48,19 @@ public class MainController {
     private static void addNewServices() {
         addNewServiceMenuMessage();
         switch (choiceMenu()) {
-            case 1:
-                addNewVilla(); // da add vao dc
+            case MENU_ADD_NEW_SERVICE_VILLA:
+                addNewVilla();
                 break;
-            case 2:
+            case MENU_ADD_NEW_SERVICE_HOUSE:
                 addNewHouse();
                 break;
-            case 3:
+            case MENU_ADD_NEW_SERVICE_ROOM:
                 addNewRoom();
                 break;
-            case 4:
+            case MENU_ADD_NEW_SERVICE_BACK_TO_MAIN_MENU:
                 displayMainMenu();
                 break;
-            case 5:
+            case MENU_ADD_NEW_SERVICE_BACK_EXIT:
                 exitProgram();
                 break;
             default:
@@ -61,142 +70,42 @@ public class MainController {
     }
 
     private static void addNewVilla() {
-        scan.nextLine();
-        System.out.println(INPUT_DATA_VILLA);
-
-        Services villa = new Villa();
-        villa.setId(UUID.randomUUID().toString().replace("_", ""));
-
-        System.out.println("Enter Server Name: ");
-        villa.setServiceName(scan.nextLine());
-
-        System.out.println("Enter Used Area");
-        villa.setUsedArea(scan.nextDouble());
-
-        System.out.println("Enter Rent Cost");
-        villa.setRentCost(scan.nextDouble());
-
-        System.out.println("Enter Max Quantity Of People");
-        villa.setMaxQuantityOfPeople(scan.nextInt());
-
-        // scan.nextLine(); // nhận phím enter làm giá trị (fix bug nextInt mà sau nó là nextLine())
-        System.out.println("Enter Rent Type");
-        villa.setRenType(scan.nextLine());
-
-        System.out.println("Enter Room Standard");
-        ((Villa) villa).setRoomStandard(scan.nextLine());
-
-        System.out.println("Enter Description Other Amenities");
-        ((Villa) villa).setDescriptionOtherAmenities(scan.nextLine());
-
-        System.out.println("Enter Pool Area");
-        ((Villa) villa).setPoolArea(scan.nextDouble());
-
-        System.out.println("Enter Floor Number");
-        ((Villa) villa).setFloorNumber(scan.nextInt());
-        String id = villa.getId();
-        String serviceName = villa.getServiceName();
-        String usedArea = Double.toString(villa.getUsedArea());
-        String rentCost = Double.toString(villa.getRentCost());
-        String maxQuantityPeople = Integer.toString(villa.getMaxQuantityOfPeople());
-        String renType = villa.getRenType();
-        String roomStandard = ((Villa) villa).getRoomStandard();
-        String descriptionOtherAmenities = ((Villa) villa).getDescriptionOtherAmenities();
-        String poolArea = Double.toString(((Villa) villa).getPoolArea());
-        String floorNumber = Integer.toString(((Villa) villa).getFloorNumber());
-
-        String[] data = {id, serviceName, usedArea, rentCost, maxQuantityPeople, renType, roomStandard, descriptionOtherAmenities, poolArea, floorNumber};
-        // String[] data = {villa.showInfo()};
-        WriteFile.writeData(VILLA_FILE_NAME, data);
-
+        villa.addNewService();
     }
 
     private static void addNewHouse() {
-        System.out.println(INPUT_DATA_HOUSE);
-        scan.nextLine();
-        Services house = new House();
-        house.setId(UUID.randomUUID().toString().replace("_", ""));
-
-        System.out.println("Enter Server Name: ");
-        house.setServiceName(scan.nextLine());
-
-        System.out.println("Enter Used Area");
-        house.setUsedArea(scan.nextDouble());
-
-        System.out.println("Enter Rent Cost");
-        house.setRentCost(scan.nextDouble());
-
-        System.out.println("Enter Max Quantity Of People");
-        house.setMaxQuantityOfPeople(scan.nextInt());
-
-        scan.nextLine(); // nhận phím enter làm giá trị (fix bug nextInt mà sau nó là nextLine())
-
-        System.out.println("Enter Rent Type");
-        house.setRenType(scan.nextLine());
-
-        System.out.println("Enter Room Standard");
-        ((House) house).setRoomStandard(scan.nextLine());
-
-        System.out.println("Enter Description Other Amenities");
-        ((House) house).setDescriptionOtherAmenities(scan.nextLine());
-
-        System.out.println("Enter Floor Number");
-        ((House) house).setFloorNumber(scan.nextInt());
+        house.addNewService();
     }
 
     private static void addNewRoom() {
-        System.out.println(INPUT_DATA_ROOM);
-        scan.nextLine();
-        Services room = new Room();
-        room.setId(UUID.randomUUID().toString().replace("_", ""));
-
-        System.out.println("Enter Server Name: ");
-        room.setServiceName(scan.nextLine());
-
-        System.out.println("Enter Used Area");
-        room.setUsedArea(scan.nextDouble());
-
-        System.out.println("Enter Rent Cost");
-        room.setRentCost(scan.nextDouble());
-
-        System.out.println("Enter Max Quantity Of People");
-        room.setMaxQuantityOfPeople(scan.nextInt());
-
-        scan.nextLine(); // nhận phím enter làm giá trị (fix bug nextInt mà sau nó là nextLine())
-
-        System.out.println("Enter Rent Type");
-        room.setRenType(scan.nextLine());
-
-        System.out.println("Enter Room Standard");
-        ((Room) room).setFreeServiceIncluded(scan.nextLine());
-
+        room.addNewService();
     }
 
     private static void showServices() {
         showServiceMessage();
         switch (choiceMenu()) {
-            case 1:
-                showAllVilla(); // doing here
+            case MENU_SHOW_SERVICE_SHOW_ALL_VILLA:
+                showAllVilla();
                 break;
-            case 2:
+            case MENU_SHOW_SERVICE_SHOW_ALL_HOUSE:
                 showAllHouse();
                 break;
-            case 3:
+            case MENU_SHOW_SERVICE_SHOW_ALL_ROOM:
                 showAllRoom();
                 break;
-            case 4:
+            case MENU_SHOW_SERVICE_SHOW_ALL_NAME_VILLA_NOT_DUPLICATE:
                 showAllNameVillaNotDuplicate();
                 break;
-            case 5:
+            case MENU_SHOW_SERVICE_SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE:
                 showAllNameHouseNotDuplicate();
                 break;
-            case 6:
+            case MENU_SHOW_SERVICE_SHOW_ALL_NAME_ROM_NOT_DUPLICATE:
                 showAllNameRoomNotDuplicate();
                 break;
-            case 7:
+            case MENU_SHOW_SERVICE_BACK_TO_MAIN_MENU:
                 displayMainMenu();
                 break;
-            case 8:
+            case MENU_SHOW_SERVICE_EXIT:
                 exitProgram();
                 break;
             default:
@@ -208,28 +117,28 @@ public class MainController {
 
     private static void showAllVilla() {
 
-        // ReadFile.readData(VILLA_FILE_NAME);
-//        String[] villa = new String[]{"id", "serviceName",
-//                "usedArea", "rentCost", "maxQuantityOfPeople",
-//                "renType", "roomStandard", "descriptionOtherAmenities", "poolArea", "floorNumber"};
-        ReadFile1.readVillaFile();
+        villa.showAllService();
     }
 
     private static void showAllHouse() {
-        ReadFile.readData(HOUSE_FILE_NAME);
+        house.showAllService();
     }
 
     private static void showAllRoom() {
-        ReadFile.readData(ROOM_FILE_NAME);
+        room.showAllService();
     }
 
     private static void showAllNameVillaNotDuplicate() {
+        villa.showServiceNameNotDuplicate();
+
     }
 
     private static void showAllNameHouseNotDuplicate() {
+        house.showServiceNameNotDuplicate();
     }
 
     private static void showAllNameRoomNotDuplicate() {
+        room.showServiceNameNotDuplicate();
     }
 
     static void mainMenuMessage() {
@@ -251,7 +160,7 @@ public class MainController {
         System.out.println(ADD_NEW_HOUSE);
         System.out.println(ADD_NEW_ROOM);
         System.out.println(BACK_TO_MENU);
-        System.out.println(EXIT);
+        System.out.println(EXIT_PROGRAM);
     }
 
     static void showServiceMessage() {
@@ -263,7 +172,7 @@ public class MainController {
         System.out.println(SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE);
         System.out.println(SHOW_ALL_NAME_ROOM_NOT_DUPLICATE);
         System.out.println(BACK_TO_MENU);
-        System.out.println(EXIT);
+        System.out.println(EXIT_PROGRAM);
     }
 
     static int choiceMenu() {
@@ -271,45 +180,12 @@ public class MainController {
     }
 
     static void invalidChoiceMenu() {
-        System.out.println("Enter Valid Menu Choice Again Please!!!");
+        System.out.println(INVALID_MENU_CHOICE);
     }
 
     static void exitProgram() {
-        System.out.println("Exit Program");
+        System.out.println(EXIT);
         System.exit(0);
     }
 
-    static Scanner scan = new Scanner(System.in);
-    public static final String VILLA_FILE_NAME = "Villa";
-    public static final String HOUSE_FILE_NAME = "House";
-    public static final String ROOM_FILE_NAME = "Room";
-
-    static final String MAIN_MENU = "----------Main Menu----------";
-    static final String ADD_NEW_SERVICE = "1. Add New Service";
-    static final String SHOW_SERVICES = "2. Show Services";
-    static final String ADD_NEW_CUSTOMER = "3. Add New Customer";
-    static final String SHOW_INFO_OF_CUSTOMER = "4. Show Information of Customer";
-    static final String ADD_NEW_BOOKING = "5. Add New Booking";
-    static final String SHOW_INFO_OF_EMPLOYEE = "6. Show Information of Employee";
-    static final String BOOKING_MOVIE_TICKET_4D = "7. Booking Movie Ticket 4D";
-    static final String FIND_EMPLOYEE = "8. Find Employee";
-    static final String EXIT = "9. Exit";
-
-    static final String ADD_NEW_SERVICE_MENU = "----------Add New Service Menu----------";
-    static final String ADD_NEW_VILLA = "1. Add New Villa";
-    static final String ADD_NEW_HOUSE = "2. Add New House";
-    static final String ADD_NEW_ROOM = "3. Add New Room";
-    static final String BACK_TO_MENU = "4. Back to menu";
-
-    static final String SHOW_SERVICE_MENU = "----------Show Service Menu----------";
-    static final String SHOW_ALL_VILLA = "1. Show all Villa";
-    static final String SHOW_ALL_HOUSE = "2. Show all House";
-    static final String SHOW_ALL_ROOM = "3. Show all Room";
-    static final String SHOW_ALL_NAME_VILLA_NOT_DUPLICATE = "4. Show All Name Villa Not Duplicate";
-    static final String SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE = "5. Show All Name House Not Duplicate";
-    static final String SHOW_ALL_NAME_ROOM_NOT_DUPLICATE = "6. Show All Name Room Not Duplicate";
-
-    static final String INPUT_DATA_VILLA = "----------Input Data Villa----------";
-    static final String INPUT_DATA_HOUSE = "----------Input Data House----------";
-    static final String INPUT_DATA_ROOM = "----------Input Data Room----------";
 }
