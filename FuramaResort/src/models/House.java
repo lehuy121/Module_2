@@ -9,6 +9,7 @@ public class House extends Services {
     private String roomStandard;
     private String descriptionOtherAmenities;
     private String floorNumber;
+    private static int countHouse;
 
     public House() {
     }
@@ -98,7 +99,9 @@ public class House extends Services {
 
     @Override
     public void showAllService() {
-        ReadFile.showAllHouse();
+        for (House house : ReadFile.getAllHouse()) {
+            System.out.println(house.showInfo());
+        }
     }
 
     @Override
@@ -109,15 +112,16 @@ public class House extends Services {
 
     @Override
     public String showInfo() {
-        return "\n Id Server: " + super.getId() +
-                "\n Service Name: " + super.getServiceName() +
-                "\n Used Area: " + super.getUsedArea() +
-                "\n Rent Cost: " + super.getRentCost() +
-                "\n Quantity Of People: " + super.getMaxQuantityOfPeople() +
-                "\n Rent Type: " + super.getRenType() +
-                "\n Room Standard: " + this.getRoomStandard() +
-                "\n Description Other Amenities: " + this.getDescriptionOtherAmenities() +
-                "\n Floor Number: " + this.getFloorNumber()
+        countHouse+=1;
+        return ""+countHouse+" Id: " + super.getId() +
+                " Service Name: " + super.getServiceName() +
+                " Used Area: " + super.getUsedArea() +
+                " Rent Cost: " + super.getRentCost() +
+                " Quantity Of People: " + super.getMaxQuantityOfPeople() +
+                " Rent Type: " + super.getRenType() +
+                " Room Standard: " + this.getRoomStandard() +
+                " Description Other Amenities: " + this.getDescriptionOtherAmenities() +
+                " Floor Number: " + this.getFloorNumber()
                 ;
     }
 

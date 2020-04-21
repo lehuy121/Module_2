@@ -1,17 +1,30 @@
 package models;
 
+import commons.ReadFile;
+import commons.Test;
+import commons.Validation;
 import commons.WriteFile;
+
+import java.util.List;
 
 public class Customer implements DefineConstants {
     private String customerName;
     private String dayOfBirth;
     private String gender;
-    private String idNumber;
+    private String idCard;
     private String phoneNumber;
     private String email;
     private String customerType;
     private String address;
     private Services useService;
+    static int count = 0;
+    static String id, serviceName, usedArea, rentCost, maxQuantityOfPeople, renType,
+            roomStandard, descriptionOtherAmenities, poolArea, floorNumber, freeServiceIncluded;
+    static List<String> listCustomer;
+    static List<String> listService;
+    static String customer;
+    static String service;
+    static String[] booking;
 
     public Customer() {
     }
@@ -40,12 +53,12 @@ public class Customer implements DefineConstants {
         this.gender = gender;
     }
 
-    public String getIdNumber() {
-        return idNumber;
+    public String getIdCard() {
+        return idCard;
     }
 
-    public void setIdNumber(String idNumber) {
-        this.idNumber = idNumber;
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
     public String getPhoneNumber() {
@@ -93,50 +106,96 @@ public class Customer implements DefineConstants {
 
         System.out.println(INPUT_DATA_CUSTOMER);
 
-        System.out.println(ENTER_CUSTOMER_NAME);
-        this.setCustomerName(scan.nextLine());
+        do {
+            System.out.println(ENTER_CUSTOMER_NAME);
+            this.setCustomerName(scan.nextLine());
+        } while (!Validation.isNameException(getCustomerName()));
 
-        System.out.println(ENTER_CUSTOMER_BIRTH);
-        this.setDayOfBirth(scan.nextLine());
+        do {
+            System.out.println(ENTER_CUSTOMER_BIRTH);
+            this.setDayOfBirth(scan.nextLine());
+        } while (!Validation.isBirthday(getDayOfBirth()));
 
+        // chua lam validation va chuan hoa du lieu
         System.out.println(ENTER_CUSTOMER_GENDER);
         this.setGender(scan.nextLine());
+        do {
+            System.out.println(ENTER_CUSTOMER_ID_NUMBER);
+            this.setIdCard(scan.nextLine());
+        } while (!Validation.isIdCard(getIdCard()));
 
-        System.out.println(ENTER_CUSTOMER_ID_NUMBER);
-        this.setIdNumber(scan.nextLine());
+        do {
+            System.out.println(ENTER_CUSTOMER_PHONE_NUMBER);
+            this.setPhoneNumber(scan.nextLine());
+        } while (!Validation.isPositiveNumber(getPhoneNumber()));
 
-        System.out.println(ENTER_CUSTOMER_PHONE_NUMBER);
-        this.setPhoneNumber(scan.nextLine());
+        do {
+            System.out.println(ENTER_CUSTOMER_EMAIL);
+            this.setEmail(scan.nextLine());
+        } while (!Validation.isEmail(getEmail()));
 
-        System.out.println(ENTER_CUSTOMER_EMAIL);
-        this.setEmail(scan.nextLine());
-
-        System.out.println(ENTER_CUSTOMER_TYPE);
-        this.setCustomerType(scan.nextLine());
+        do {
+            System.out.println(ENTER_CUSTOMER_TYPE);
+            this.setCustomerType(scan.nextLine());
+        } while (!Validation.isFirstLetterUppercase(getCustomerType()));
 
         System.out.println(ENTER_CUSTOMER_ADDRESS);
         this.setAddress(scan.nextLine());
 
-        System.out.println(ENTER_CUSTOMER_USE_SERVICE); // chua hieu
-        //this.setUseService();
-
-        String[] data = {getCustomerName(), getDayOfBirth(), getGender(), getIdNumber(), getPhoneNumber(),
-                getEmail(), getCustomerType(), getAddress(), String.valueOf(getUseService())};
+        String[] data = {getCustomerName(), getDayOfBirth(), getGender(), getIdCard(), getPhoneNumber(),
+                getEmail(), getCustomerType(), getAddress()};
         WriteFile.writeData("Customer", data);
     }
 
+    public void showInformationAndSortByName() {
+        ReadFile.showAndSortInformationCustomerByName();
 
+    }
+
+    public void showInformationCustomer() {
+        ReadFile.getInformationCustomer();
+
+    }
+
+    public void bookingService(int customerNumber, int serviceNumber, String fileName) {
+        customerNumber--;
+        serviceNumber--;
+         listCustomer = Test.readFileCsv("Customer");
+        customer = listCustomer.get(customerNumber);
+
+         listService = Test.readFileCsv(fileName);
+        service = listService.get(serviceNumber);
+
+        booking = new String[]{customer, service};
+        WriteFile.writeData("Booking", booking);
+//        id = ReadFile.getAllVilla().get(serviceNumber).getId();
+//        serviceName = ReadFile.getAllVilla().get(serviceNumber).getServiceName();
+//        usedArea = ReadFile.getAllVilla().get(serviceNumber).getUsedArea();
+//        rentCost = ReadFile.getAllVilla().get(serviceNumber).getRentCost();
+//        maxQuantityOfPeople = ReadFile.getAllVilla().get(serviceNumber).getMaxQuantityOfPeople();
+//        renType = ReadFile.getAllVilla().get(serviceNumber).getRenType();
+//        roomStandard = ReadFile.getAllVilla().get(serviceNumber).getRoomStandard();
+//        descriptionOtherAmenities = ReadFile.getAllVilla().get(serviceNumber).getDescriptionOtherAmenities();
+//        poolArea = ReadFile.getAllVilla().get(serviceNumber).getPoolArea();
+//        floorNumber = ReadFile.getAllVilla().get(serviceNumber).getFloorNumber();
+//
+//        booking = new String[]{customer, id, serviceName, usedArea, rentCost, maxQuantityOfPeople, renType,
+//                roomStandard, descriptionOtherAmenities, poolArea, floorNumber};
+
+
+    }
     public String showInfo() {
-        return "Customer{" +
+        count += 1;
+        return "Customer: " + count + "{" +
                 "customerName='" + customerName + '\'' +
                 ", dayOfBirth='" + dayOfBirth + '\'' +
                 ", gender='" + gender + '\'' +
-                ", idNumber='" + idNumber + '\'' +
+                ", idCard='" + idCard + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 ", customerType='" + customerType + '\'' +
                 ", address='" + address + '\'' +
-                ", useService=" + useService +
                 '}';
     }
+
 }

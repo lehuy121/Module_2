@@ -7,6 +7,7 @@ import commons.WriteFile;
 
 public class Room extends Services {
     private String freeServiceIncluded;
+    private static int countRoom;
 
 
     public Room() {
@@ -69,7 +70,10 @@ public class Room extends Services {
 
     @Override
     public void showAllService() {
-        ReadFile.showAllRoom();
+        for (Room room : ReadFile.getAllRoom()) {
+            System.out.println(room.showInfo());
+        }
+
     }
 
     @Override
@@ -79,13 +83,14 @@ public class Room extends Services {
 
     @Override
     public String showInfo() {
-        return "\n Id Server: " + super.getId() +
-                "\n Service Name: " + super.getServiceName() +
-                "\n Used Area: " + super.getUsedArea() +
-                "\n Rent Cost: " + super.getRentCost() +
-                "\n Quantity Of People: " + super.getMaxQuantityOfPeople() +
-                "\n Rent Type: " + super.getRenType() +
-                "\n Room Standard: " + this.getFreeServiceIncluded()
+        countRoom+=1;
+        return "Room: "+countRoom+" Id: " + super.getId() +
+                " Service Name: " + super.getServiceName() +
+                " Used Area: " + super.getUsedArea() +
+                " Rent Cost: " + super.getRentCost() +
+                " Quantity Of People: " + super.getMaxQuantityOfPeople() +
+                " Rent Type: " + super.getRenType() +
+                " Room Standard: " + this.getFreeServiceIncluded()
                 ;
     }
 

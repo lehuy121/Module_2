@@ -28,7 +28,6 @@ public interface DefineConstants {
     String ENTER_CUSTOMER_USE_SERVICE = "Enter Service Want To Use";
 
 
-
     String VILLA_FILE_NAME = "Villa";
     String HOUSE_FILE_NAME = "House";
     String ROOM_FILE_NAME = "Room";
@@ -43,7 +42,7 @@ public interface DefineConstants {
     String BOOKING_MOVIE_TICKET_4D = "7. Booking Movie Ticket 4D";
     String FIND_EMPLOYEE = "8. Find Employee";
     String EXIT = "9. Exit";
-    String EXIT_PROGRAM = "Exit Program";
+    String EXIT_PROGRAM = "8. Exit Program";
     String INVALID_MENU_CHOICE = "Enter Valid Menu Choice Again Please!!!";
 
     String ADD_NEW_SERVICE_MENU = "----------Add New Service Menu----------";
@@ -59,6 +58,13 @@ public interface DefineConstants {
     String SHOW_ALL_NAME_VILLA_NOT_DUPLICATE = "4. Show All Name Villa Not Duplicate";
     String SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE = "5. Show All Name House Not Duplicate";
     String SHOW_ALL_NAME_ROOM_NOT_DUPLICATE = "6. Show All Name Room Not Duplicate";
+    String BACK_TO_MAIN_MENU = "7. Back to main menu";
+
+    String BOOKING_MENU = "----------Booking Service----------";
+    String BOOKING_MENU_BOOKING_VILLA = "1. Booking Villa";
+    String BOOKING_MENU_BOOKING_HOUSE = "2. Booking House";
+    String BOOKING_MENU_BOOKING_ROOM = "3. Booking Room";
+    String BOOKING_MENU_BACK_TO_MAIN_MENU = "4. Back to main menu";
 
     String INPUT_DATA_VILLA = "----------Input Data Villa----------";
     String INPUT_DATA_HOUSE = "----------Input Data House----------";

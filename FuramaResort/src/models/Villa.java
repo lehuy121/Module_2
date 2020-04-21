@@ -10,6 +10,7 @@ public class Villa extends Services {
     private String descriptionOtherAmenities;
     private String poolArea;
     private String floorNumber;
+    private static int countVilla;
 
 
     public Villa() {
@@ -113,7 +114,10 @@ public class Villa extends Services {
 
     @Override
     public void showAllService() {
-        ReadFile.showAllVilla();
+        for (Villa villa : ReadFile.getAllVilla()) {
+               System.out.println(villa.showInfo());
+            }
+
     }
 
     @Override
@@ -123,7 +127,8 @@ public class Villa extends Services {
 
     @Override
     public String showInfo() {
-        return "Id Service: " + super.getId() +
+        countVilla+=1;
+        return "Villa: "+countVilla+" Id: " + super.getId() +
                 ", Service Name: " + super.getServiceName() +
                 ", Used Area: " + super.getUsedArea() +
                 ", Rent Cost: " + super.getRentCost() +
