@@ -1,8 +1,11 @@
-package models;
+package commons;
 
 import java.util.Scanner;
 
 public interface DefineConstants {
+     enum EntityType {
+        VILLA, HOUSE, ROOM, CUSTOMER, EMPLOYEE
+    }
     Scanner scan = new Scanner(System.in);
     String VILLA_ID_FORMAT = "SVVL-";
     String HOUSE_ID_FORMAT = "SVHO-";
@@ -65,6 +68,8 @@ public interface DefineConstants {
     String BOOKING_MENU_BOOKING_HOUSE = "2. Booking House";
     String BOOKING_MENU_BOOKING_ROOM = "3. Booking Room";
     String BOOKING_MENU_BACK_TO_MAIN_MENU = "4. Back to main menu";
+
+    String SORT_BY_CUSTOMER_NAME = "----------Sort by customer name----------";
 
     String INPUT_DATA_VILLA = "----------Input Data Villa----------";
     String INPUT_DATA_HOUSE = "----------Input Data House----------";

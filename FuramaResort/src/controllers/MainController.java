@@ -1,5 +1,6 @@
 package controllers;
 
+import commons.DefineConstants;
 import models.*;
 
 public class MainController implements DefineConstants {
@@ -54,11 +55,11 @@ public class MainController implements DefineConstants {
                 displayMainMenu();
                 break;
             case MAIN_MENU_ADD_NEW_CUSTOMER:
-                addNewCustomer();
+                CustomerController.addNewCustomer();
                 displayMainMenu();
                 break;
             case MAIN_MENU_SHOW_INFO_CUSTOMER:
-                showInformationOfCustomer();
+                CustomerController.showInformationAndSortByName();
                 displayMainMenu();
                 break;
             case MAIN_MENU_ADD_NEW_BOOKING:
@@ -69,9 +70,11 @@ public class MainController implements DefineConstants {
                 break;
             case MAIN_MENU_BOOKING_MOVIE_TICKET_4D:
                 bookingMovieTicket4D();
+                displayMainMenu();
                 break;
             case MAIN_MENU_FIND_EMPLOYEE:
                 findEmployee();
+                displayMainMenu();
                 break;
             case MAIN_MENU_EXIT:
                 System.exit(0);
@@ -81,16 +84,8 @@ public class MainController implements DefineConstants {
         }
     }
 
-    private static void addNewCustomer() {
-        customer.addNewCustomer();
-    }
-
-    private static void showInformationOfCustomer() {
-        customer.showInformationAndSortByName();
-    }
-
     private static void addNewBooking() {
-        customer.showInformationCustomer();
+        CustomerController.showInformationCustomer();
         System.out.println("Choice Customer");
         choiceCustomer = scan.nextInt();
         addNewBookingMenuMessage();
@@ -114,31 +109,38 @@ public class MainController implements DefineConstants {
         showAllVilla();
         System.out.println("Choice Villa");
         choiceService = scan.nextInt();
-      customer.bookingService(choiceCustomer, choiceService, VILLA_FILE_NAME);
+        CustomerController.bookingService(choiceCustomer, choiceService, VILLA_FILE_NAME);
     }
 
     private static void bookingHouse() {
         showAllHouse();
         System.out.println("Choice House");
         choiceService = scan.nextInt();
-        customer.bookingService(choiceCustomer, choiceService, HOUSE_FILE_NAME);
+        CustomerController.bookingService(choiceCustomer, choiceService, HOUSE_FILE_NAME);
     }
 
     private static void bookingRoom() {
         showAllRoom();
         System.out.println("Choice Room");
         choiceService = scan.nextInt();
-        customer.bookingService(choiceCustomer, choiceService, ROOM_FILE_NAME);
+        CustomerController.bookingService(choiceCustomer, choiceService, ROOM_FILE_NAME);
     }
 
 
     private static void showInformationOfEmployee() {
+        EmployeeController.showAllEmployeeUsingMap();
     }
 
     private static void bookingMovieTicket4D() {
+        BookingMovieController.bookingMovieTicket4D();
+
     }
 
     private static void findEmployee() {
+        scan.nextLine();
+        System.out.println("----------Find Employee----------");
+        System.out.println("Enter Employee Name");
+        EmployeeController.searchEmployeeByName(scan.nextLine());
     }
 
     private static void addNewServices() {
