@@ -2,6 +2,7 @@ package controllers;
 
 import commons.ReadFile;
 import models.Employee;
+import views.EmployeeView;
 
 import java.util.*;
 
@@ -27,16 +28,17 @@ public class EmployeeController {
         return stackEmployee;
     }
 
-    static void searchEmployeeByName(String name) {
+    public static void searchEmployeeByName(String name) {
         boolean found = false;
         for (Employee employee : employeesStack()) {
             if (employee.getEmployeeName().equals(name)) {
-                System.out.println(employee);
+                EmployeeView.displaySearchResult(employee);
                 found = true;
             }
         }
         if (!found) {
-            System.out.println("Name Not Found !!!");
+            EmployeeView.displaySearchResult(null);
         }
+
     }
 }
