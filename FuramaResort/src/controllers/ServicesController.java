@@ -18,14 +18,14 @@ public class ServicesController implements DefineConstants {
         addNewService(EntityType.VILLA, VILLA_FILE_NAME);
     }
 
-    public static void getAllInformationService(DefineConstants.EntityType serviceType) {
+    public static void getAllInformationService(EntityType serviceType) {
         List<Services> servicesList = ReadFile.getDataFromCsv(serviceType);
         for (Services service : servicesList) {
             ServicesView.displayInformation(service);
         }
     }
 
-    public static void getNameServiceAndRemoveDuplicate(DefineConstants.EntityType serviceType) {
+    public static void getNameServiceAndRemoveDuplicate(EntityType serviceType) {
         List<Services> servicesList = ReadFile.getDataFromCsv(serviceType);
         TreeSet<String> treeSet = new TreeSet<>();
         for (Services service : servicesList) {
