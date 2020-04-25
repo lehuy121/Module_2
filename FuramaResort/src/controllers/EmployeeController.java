@@ -1,26 +1,27 @@
 package controllers;
 
+import commons.DefineConstants;
 import commons.ReadFile;
 import models.Employee;
 import views.EmployeeView;
 
 import java.util.*;
 
-public class EmployeeController {
-    static void showAllEmployeeUsingMap() {
+public class EmployeeController implements DefineConstants {
+    static void numberedAllEmployeesByMap() {
         Map<Integer, String> map = new HashMap<>();
-        List<String> employeeLists = ReadFile.getDataFromCsvFile("Employee");
+        List<String> employeeLists = ReadFile.getDataFromCsvFile(EMPLOYEE_FILE_NAME);
         for (int i = 0, j = 1; i < employeeLists.size(); i++, j++) {
             map.put(j, employeeLists.get(i));
         }
         Set<Integer> set = map.keySet();
         for (Integer key : set) {
-            System.out.println(key + " " + map.get(key));
+            EmployeeView.displayAllEmployee(key, map.get(key));
         }
     }
 
     private static Stack<Employee> employeesStack() {
-        List<Employee> employeeLists = ReadFile.getAllEmployee();
+        List<Employee> employeeLists = ReadFile.getDataFromCsv(EntityType.EMPLOYEE);
         Stack<Employee> stackEmployee = new Stack<>();
         for (Employee employee : employeeLists) {
             stackEmployee.push(employee);

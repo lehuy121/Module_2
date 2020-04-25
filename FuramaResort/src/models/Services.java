@@ -1,6 +1,5 @@
 package models;
 
-
 import commons.DefineConstants;
 
 public abstract class Services implements DefineConstants {
@@ -72,7 +71,4 @@ public abstract class Services implements DefineConstants {
     }
 
     public abstract String showInfo();
-    public abstract void addNewService();
-    public abstract void showAllService();
-    public abstract void showServiceNameNotDuplicate();
 }

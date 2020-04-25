@@ -12,7 +12,6 @@ public class Customer implements DefineConstants {
     private String customerType;
     private String address;
     private Services useService;
-    static int count = 0;
 
     public Customer() {
     }
@@ -90,8 +89,7 @@ public class Customer implements DefineConstants {
     }
 
     public String showInfo() {
-        count += 1;
-        return "Customer: " + count + "{" +
+        return "{" +
                 "customerName='" + customerName + '\'' +
                 ", dayOfBirth='" + dayOfBirth + '\'' +
                 ", gender='" + gender + '\'' +

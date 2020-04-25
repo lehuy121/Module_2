@@ -5,6 +5,8 @@ import commons.Validation;
 import commons.WriteFile;
 import models.Customer;
 import commons.DefineConstants;
+import models.Services;
+import views.CustomerView;
 
 import java.util.*;
 
@@ -13,7 +15,7 @@ public class CustomerController implements DefineConstants {
     static List<String> listCustomer;
     static List<String> listService;
     static String getCustomerFromCsv;
-    static String service;
+    static String getService;
     static String[] booking;
 
     public static void addNewCustomer() {
@@ -27,7 +29,7 @@ public class CustomerController implements DefineConstants {
         setEmail();
         setType();
         setAddress();
-        WriteFile.writeData("Customer", getDataInput());
+        WriteFile.writeData(CUSTOMER_FILE_NAME, getDataInput());
     }
 
     private static String[] getDataInput() {
@@ -90,42 +92,66 @@ public class CustomerController implements DefineConstants {
         } while (!Validation.isNameException(customer.getCustomerName()));
     }
 
-    public static void showInformationAndSortByName() {
-        List<Customer> customerList = new ArrayList<>();
+    public static void sortByName() {
+        List<Customer> customerList;
         customerList = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
         customerList.sort(new CustomerNameComparator());
-        System.out.println(SORT_BY_CUSTOMER_NAME);
         for (Customer customer : customerList) {
-            System.out.println(customer.showInfo());
+            CustomerView.displayAllCustomer(customer);
         }
     }
 
-    public static void showInformationCustomer() {
-        List<Customer> customerList = new ArrayList<>();
+    public static void numberedAllCustomerByMap() {
+        Map<Integer, String> map = new HashMap<>();
+        List<Customer> customerList;
         customerList = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
-        for (Customer customer : customerList) {
-            System.out.println(customer.showInfo());
+        for (int i = 0, j = 1; i < customerList.size(); i++, j++) {
+            map.put(j, customerList.get(i).showInfo());
         }
-
+        Set<Integer> set = map.keySet();
+        for (Integer key : set) {
+            CustomerView.displayAllCustomer(key, map.get(key));
+        }
     }
 
     public static void bookingService(int customerNumber, int serviceNumber, String fileName) {
         customerNumber--;
         serviceNumber--;
-        listCustomer = ReadFile.getDataFromCsvFile("Customer");
+        listCustomer = ReadFile.getDataFromCsvFile(CUSTOMER_FILE_NAME);
         getCustomerFromCsv = listCustomer.get(customerNumber);
 
         listService = ReadFile.getDataFromCsvFile(fileName);
-        service = listService.get(serviceNumber);
+        getService = listService.get(serviceNumber);
 
-        booking = new String[]{getCustomerFromCsv, service};
-        WriteFile.writeData("Booking", booking);
+        booking = new String[]{getCustomerFromCsv, getService};
+        WriteFile.writeData(BOOKING_FILE_NAME, booking);
+    }
+    public static void bookingService(int customerNumber, int serviceNumber, EntityType service) {
+        customerNumber--;
+        serviceNumber--;
+        List<Customer> listCustomer = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
+        getCustomerFromCsv = listCustomer.get(customerNumber).showInfo();
+
+        List<Services> listService = ReadFile.getDataFromCsv(service);
+        getService = listService.get(serviceNumber).showInfo();
+
+        booking = new String[]{getCustomerFromCsv, getService};
+        WriteFile.writeData(BOOKING_FILE_NAME, booking);
 
     }
 
+    public static void main(String[] args) {
+
+        List<Customer> listCustomer = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
+        String result = listCustomer.get(0).showInfo();
+        System.out.println(result);
+    }
+
+
+
     public static void showAllCustomerUsingMap() {
         Map<Integer, String> map = new HashMap<>();
-        List<String> employeeLists = ReadFile.getDataFromCsvFile("Customer");
+        List<String> employeeLists = ReadFile.getDataFromCsvFile(CUSTOMER_FILE_NAME);
         for (int i = 0, j = 1; i < employeeLists.size(); i++, j++) {
             map.put(j, employeeLists.get(i));
         }

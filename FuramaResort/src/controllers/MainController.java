@@ -1,44 +1,10 @@
 package controllers;
 
 import commons.DefineConstants;
-import models.*;
 
 public class MainController implements DefineConstants {
-    public static final int MAIN_MENU_ADD_NEW_SERVICE = 1;
-    public static final int MAIN_MENU_SHOW_SERVICE = 2;
-    public static final int MAIN_MENU_ADD_NEW_CUSTOMER = 3;
-    public static final int MAIN_MENU_SHOW_INFO_CUSTOMER = 4;
-    public static final int MAIN_MENU_ADD_NEW_BOOKING = 5;
-    public static final int MAIN_MENU_SHOW_INFO_EMPLOYEE = 6;
-    public static final int MAIN_MENU_BOOKING_MOVIE_TICKET_4D = 7;
-    public static final int MAIN_MENU_FIND_EMPLOYEE = 8;
-    public static final int MAIN_MENU_EXIT = 9;
-
-    public static final int MENU_ADD_NEW_SERVICE_VILLA = 1;
-    public static final int MENU_ADD_NEW_SERVICE_HOUSE = 2;
-    public static final int MENU_ADD_NEW_SERVICE_ROOM = 3;
-    public static final int MENU_ADD_NEW_SERVICE_BACK_TO_MAIN_MENU = 4;
-    public static final int MENU_ADD_NEW_SERVICE_BACK_EXIT = 5;
-
-    public static final int MENU_SHOW_SERVICE_SHOW_ALL_VILLA = 1;
-    public static final int MENU_SHOW_SERVICE_SHOW_ALL_HOUSE = 2;
-    public static final int MENU_SHOW_SERVICE_SHOW_ALL_ROOM = 3;
-    public static final int MENU_SHOW_SERVICE_SHOW_ALL_NAME_VILLA_NOT_DUPLICATE = 4;
-    public static final int MENU_SHOW_SERVICE_SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE = 5;
-    public static final int MENU_SHOW_SERVICE_SHOW_ALL_NAME_ROM_NOT_DUPLICATE = 6;
-    public static final int MENU_SHOW_SERVICE_BACK_TO_MAIN_MENU = 7;
-    public static final int MENU_SHOW_SERVICE_EXIT = 8;
-    public static final int MENU_BOOKING_BOOKING_VILA = 1;
-    public static final int MENU_BOOKING_BOOKING_HOUSE = 2;
-    public static final int MENU_BOOKING_BOOKING_ROOM = 3;
-    public static final int MENU_BOOKING_BACK_TO_MAIN_MENU = 4;
-    public static int choiceCustomer;
-    public static int choiceService;
-
-    static Villa villa = new Villa();
-    static House house = new House();
-    static Room room = new Room();
-    static Customer customer = new Customer();
+    public static int choiceCustomer = 0;
+    public static int choiceService = 0;
 
     public static void main(String[] args) {
         displayMainMenu();
@@ -59,7 +25,7 @@ public class MainController implements DefineConstants {
                 displayMainMenu();
                 break;
             case MAIN_MENU_SHOW_INFO_CUSTOMER:
-                CustomerController.showInformationAndSortByName();
+                CustomerController.sortByName();
                 displayMainMenu();
                 break;
             case MAIN_MENU_ADD_NEW_BOOKING:
@@ -85,8 +51,8 @@ public class MainController implements DefineConstants {
     }
 
     private static void addNewBooking() {
-        CustomerController.showInformationCustomer();
-        System.out.println("Choice Customer");
+        CustomerController.numberedAllCustomerByMap();
+        System.out.println(CHOICE_CUSTOMER);
         choiceCustomer = scan.nextInt();
         addNewBookingMenuMessage();
         switch (choiceMenu()) {
@@ -107,39 +73,41 @@ public class MainController implements DefineConstants {
 
     private static void bookingVilla() {
         showAllVilla();
-        System.out.println("Choice Villa");
+        System.out.println(CHOICE_VILLA);
         choiceService = scan.nextInt();
         CustomerController.bookingService(choiceCustomer, choiceService, VILLA_FILE_NAME);
     }
 
     private static void bookingHouse() {
         showAllHouse();
-        System.out.println("Choice House");
+        System.out.println(CHOICE_HOUSE);
         choiceService = scan.nextInt();
         CustomerController.bookingService(choiceCustomer, choiceService, HOUSE_FILE_NAME);
     }
 
     private static void bookingRoom() {
         showAllRoom();
-        System.out.println("Choice Room");
+        System.out.println(CHOICE_ROOM);
         choiceService = scan.nextInt();
         CustomerController.bookingService(choiceCustomer, choiceService, ROOM_FILE_NAME);
+
     }
 
 
     private static void showInformationOfEmployee() {
-        EmployeeController.showAllEmployeeUsingMap();
+        EmployeeController.numberedAllEmployeesByMap();
     }
 
     private static void bookingMovieTicket4D() {
-        BookingMovieController.bookingMovieTicket4D();
+        System.out.println(BOOKING_MOVIE_TICKET);
+        BookingMovieController.bookingTicket();
 
     }
 
     private static void findEmployee() {
         scan.nextLine();
-        System.out.println("----------Find Employee----------");
-        System.out.println("Enter Employee Name");
+        System.out.println(SEARCH_EMPLOYEE);
+        System.out.println(ENTER_EMPLOYEE_NAME);
         EmployeeController.searchEmployeeByName(scan.nextLine());
     }
 
@@ -168,15 +136,15 @@ public class MainController implements DefineConstants {
     }
 
     private static void addNewVilla() {
-        villa.addNewService();
+        ServicesController.addNewService(EntityType.VILLA, VILLA_FILE_NAME);
     }
 
     private static void addNewHouse() {
-        house.addNewService();
+        ServicesController.addNewService(EntityType.HOUSE, HOUSE_FILE_NAME);
     }
 
     private static void addNewRoom() {
-        room.addNewService();
+        ServicesController.addNewService(EntityType.ROOM, ROOM_FILE_NAME);
     }
 
     private static void showServices() {
@@ -214,29 +182,27 @@ public class MainController implements DefineConstants {
     }
 
     private static void showAllVilla() {
-
-        villa.showAllService();
+        ServicesController.getAllInformationService(EntityType.VILLA);
     }
 
     private static void showAllHouse() {
-        house.showAllService();
+        ServicesController.getAllInformationService(EntityType.HOUSE);
     }
 
     private static void showAllRoom() {
-        room.showAllService();
+        ServicesController.getAllInformationService(EntityType.ROOM);
     }
 
     private static void showAllNameVillaNotDuplicate() {
-        villa.showServiceNameNotDuplicate();
-
+        ServicesController.getNameServiceAndRemoveDuplicate(EntityType.VILLA);
     }
 
     private static void showAllNameHouseNotDuplicate() {
-        house.showServiceNameNotDuplicate();
+        ServicesController.getNameServiceAndRemoveDuplicate(EntityType.HOUSE);
     }
 
     private static void showAllNameRoomNotDuplicate() {
-        room.showServiceNameNotDuplicate();
+        ServicesController.getNameServiceAndRemoveDuplicate(EntityType.ROOM);
     }
 
     static void mainMenuMessage() {
@@ -258,7 +224,7 @@ public class MainController implements DefineConstants {
         System.out.println(ADD_NEW_HOUSE);
         System.out.println(ADD_NEW_ROOM);
         System.out.println(BACK_TO_MENU);
-        System.out.println(EXIT_PROGRAM);
+        System.out.println(ADD_NEW_SERVICE_MENU_EXIT);
     }
 
     static void showServiceMessage() {
@@ -269,8 +235,8 @@ public class MainController implements DefineConstants {
         System.out.println(SHOW_ALL_NAME_VILLA_NOT_DUPLICATE);
         System.out.println(SHOW_ALL_NAME_HOUSE_NOT_DUPLICATE);
         System.out.println(SHOW_ALL_NAME_ROOM_NOT_DUPLICATE);
-        System.out.println(BACK_TO_MAIN_MENU);
-        System.out.println(EXIT_PROGRAM);
+        System.out.println(SHOW_SERVICE_MENU_BACK_TO_MAIN_MENU);
+        System.out.println(SHOW_SERVICE_MENU_EXIT_PROGRAM);
     }
 
     private static void addNewBookingMenuMessage() {
@@ -290,7 +256,7 @@ public class MainController implements DefineConstants {
     }
 
     static void exitProgram() {
-        System.out.println(EXIT);
+        System.out.println(EXIT_MESSAGE);
         System.exit(0);
     }
 

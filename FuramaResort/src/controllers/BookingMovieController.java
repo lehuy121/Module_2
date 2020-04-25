@@ -1,7 +1,6 @@
 package controllers;
 
 import commons.ReadFile;
-import models.Customer;
 import commons.DefineConstants;
 
 import java.util.LinkedList;
@@ -14,39 +13,37 @@ public class BookingMovieController implements DefineConstants {
     static int choiceCustomer = 0;
     static int seat = 0;
     static Queue<String> queueCustomerBookingTicket = new LinkedList<>();
-    static Customer customer = new Customer();
 
+    static void bookingTicket() {
+        System.out.println(LIST_CUSTOMER);
+        CustomerController.showAllCustomerUsingMap();
+        System.out.println(TOTAL_TICKETS + totalTickets);
+        System.out.println(TICKET_LEFT + (totalTickets - ticketHasBeenSold));
+
+        System.out.println(CHOICE_CUSTOMER_FOR_ORDER);
+        choiceCustomer = scan.nextInt();
+        choiceCustomer--;
+        bookingProcess(choiceCustomer);
+
+    }
     static void bookingProcess(int numberCustomer) {
-        List<String> listCustomer = ReadFile.getDataFromCsvFile("Customer");
+        List<String> listCustomer = ReadFile.getDataFromCsvFile(CUSTOMER_FILE_NAME);
 
         if (ticketHasBeenSold < totalTickets) {
 
             seat+=1;
-            queueCustomerBookingTicket.add("Seat number = "+ seat +listCustomer.get(numberCustomer));
+            queueCustomerBookingTicket.add(SEAT_NUMBER+ seat +listCustomer.get(numberCustomer));
             ticketHasBeenSold++;
-            System.out.println("-----Done!!!-----");
-            System.out.println("Number of ticket left: " + (totalTickets - ticketHasBeenSold));
+            System.out.println(BOOKING_TICKET_SUCCESS);
+            System.out.println(TICKET_LEFT + (totalTickets - ticketHasBeenSold));
         }
         if (ticketHasBeenSold == totalTickets) {
-            System.out.println("Out of ticket");
-            System.out.println("List of the customer ordered a ticket");
+            System.out.println(OUT_OF_TICKET);
+            System.out.println(CUSTOMER_LIST_BOOKED);
             for (String customer : queueCustomerBookingTicket) {
                 System.out.println(customer);
             }
         }
-
-    }
-
-    static void bookingMovieTicket4D() {
-        System.out.println("----------List Customer-----------");
-        CustomerController.showAllCustomerUsingMap();
-        System.out.println("Total of tickets: " + totalTickets);
-        System.out.println("Number of ticket left: " + (totalTickets - ticketHasBeenSold));
-
-        System.out.println("Choice customer want to order");
-        choiceCustomer = scan.nextInt();
-        choiceCustomer--;
-        bookingProcess(choiceCustomer);
 
     }
 
