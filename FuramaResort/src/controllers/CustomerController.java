@@ -95,7 +95,7 @@ public class CustomerController implements DefineConstants {
     public static void sortByName() {
         List<Customer> customerList;
         customerList = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
-        customerList.sort(new CustomerNameComparator());
+        customerList.sort(new customerComparator());
         for (Customer customer : customerList) {
             CustomerView.displayAllCustomer(customer);
         }
@@ -126,6 +126,7 @@ public class CustomerController implements DefineConstants {
         booking = new String[]{getCustomerFromCsv, getService};
         WriteFile.writeData(BOOKING_FILE_NAME, booking);
     }
+
     public static void bookingService(int customerNumber, int serviceNumber, EntityType service) {
         customerNumber--;
         serviceNumber--;
@@ -148,7 +149,6 @@ public class CustomerController implements DefineConstants {
     }
 
 
-
     public static void showAllCustomerUsingMap() {
         Map<Integer, String> map = new HashMap<>();
         List<String> employeeLists = ReadFile.getDataFromCsvFile(CUSTOMER_FILE_NAME);
@@ -161,10 +161,25 @@ public class CustomerController implements DefineConstants {
         }
     }
 
-    public static class CustomerNameComparator implements Comparator<Customer> {
+    public static class customerComparator implements Comparator<Customer> {
         @Override
         public int compare(Customer o1, Customer o2) {
-            return o1.getCustomerName().compareTo(o2.getCustomerName());
+            int resultCompare = o1.getCustomerName().compareTo(o2.getCustomerName());
+            if (resultCompare == 0) {
+                return compareYear(o1, o2);
+            }
+            return resultCompare;
         }
+    }
+
+    private static int compareYear(Customer o1, Customer o2) {
+        int yearBornFirstCustomer = Integer.parseInt(o1.getDayOfBirth().substring(6, 10));
+        int yearBornSecondCustomer = Integer.parseInt(o2.getDayOfBirth().substring(6, 10));
+        if (yearBornFirstCustomer == yearBornSecondCustomer) {
+            return 0;
+        } else if (yearBornFirstCustomer > yearBornSecondCustomer) {
+            return 1;
+        }
+        return -1;
     }
 }
