@@ -1,9 +1,9 @@
 package views;
 
-import commons.DefineConstants;
+import commons.CommonVariable;
 import models.Employee;
 
-public class EmployeeView implements DefineConstants {
+public class EmployeeView implements CommonVariable {
     public static void displaySearchResult(Employee employee) {
         if (employee == null) {
             System.out.println(CAN_NOT_FOUND_EMPLOYEE_NAME);

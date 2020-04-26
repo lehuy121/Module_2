@@ -1,13 +1,13 @@
 package controllers;
 
-import commons.DefineConstants;
+import commons.CommonVariable;
 import commons.ReadFile;
 import models.Employee;
 import views.EmployeeView;
 
 import java.util.*;
 
-public class EmployeeController implements DefineConstants {
+public class EmployeeController implements CommonVariable {
     static void numberedAllEmployeesByMap() {
         Map<Integer, String> map = new HashMap<>();
         List<String> employeeLists = ReadFile.getDataFromCsvFile(EMPLOYEE_FILE_NAME);
@@ -21,7 +21,7 @@ public class EmployeeController implements DefineConstants {
     }
 
     private static Stack<Employee> employeesStack() {
-        List<Employee> employeeLists = ReadFile.getDataFromCsv(EntityType.EMPLOYEE);
+        List<Employee> employeeLists = ReadFile.getDataFromCsv(ENTITY_TYPE.EMPLOYEE);
         Stack<Employee> stackEmployee = new Stack<>();
         for (Employee employee : employeeLists) {
             stackEmployee.push(employee);

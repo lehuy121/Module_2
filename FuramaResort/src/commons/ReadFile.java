@@ -11,7 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-public class ReadFile {
+public class ReadFile implements CommonVariable {
     private static final char SEPARATOR = ',';
     private static final char QUOTE = '"';
     private static final int NUM_OF_LINE_SKIP = 0;
@@ -34,9 +34,10 @@ public class ReadFile {
     static final String CUSTOMER_FILE = System.getProperty("user.dir") + "\\src\\data\\Customer.csv";
     static final String EMPLOYEE_FILENAME = System.getProperty("user.dir") + "\\src\\data\\Employee.csv";
 
-    public static <E>ArrayList<E> getDataFromCsv(DefineConstants.EntityType entityType) {
+    @SuppressWarnings("unchecked")
+    public static <E> ArrayList<E> getDataFromCsv(ENTITY_TYPE entityType) {
         ArrayList<E> arrayLists = null;
-        String filePath = "";
+        String filePath;
         String[] mapping;
         switch (entityType) {
             case VILLA:
@@ -80,6 +81,8 @@ public class ReadFile {
                 case EMPLOYEE:
                     strategy.setType((Class<? extends E>) Employee.class);
                     break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + entityType);
             }
 
             strategy.setColumnMapping(mapping);
@@ -96,28 +99,6 @@ public class ReadFile {
         }
         return arrayLists;
     }
-
-    public static List<Employee> getAllEmployee() {
-        List<Employee> employees = null;
-        try {
-            ColumnPositionMappingStrategy<Employee> strategy = new ColumnPositionMappingStrategy<>();
-            strategy.setType(Employee.class);
-            strategy.setColumnMapping(COLUMN_MAPPING_EMPLOYEE);
-            CsvToBean<Employee> csvToBean = new CsvToBeanBuilder<Employee>(new FileReader(EMPLOYEE_FILENAME))
-                    .withMappingStrategy(strategy)
-                    .withSeparator(SEPARATOR)
-                    .withQuoteChar(QUOTE)
-                    .withSkipLines(NUM_OF_LINE_SKIP)
-                    .withIgnoreLeadingWhiteSpace(true)
-                    .build();
-            employees = csvToBean.parse();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return employees;
-    }
-
-
     public static List<String> getDataFromCsvFile(String fileName) {
         String filePath = System.getProperty("user.dir") + "\\src\\data\\" + fileName + ".csv";
         FileReader file;

@@ -1,9 +1,9 @@
 package views;
 
-import commons.DefineConstants;
+import commons.CommonVariable;
 import models.Customer;
 
-public class CustomerView implements DefineConstants {
+public class CustomerView implements CommonVariable {
     public static void displayAllCustomer(Customer customers) {
         System.out.println(customers.showInfo());
     }

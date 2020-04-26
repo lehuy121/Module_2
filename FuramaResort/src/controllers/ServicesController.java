@@ -10,22 +10,22 @@ import views.ServicesView;
 import java.util.List;
 import java.util.TreeSet;
 
-public class ServicesController implements DefineConstants {
+public class ServicesController implements CommonVariable {
     static Services services = null;
     static String[] data;
 
     public static void main(String[] args) {
-        addNewService(EntityType.VILLA, VILLA_FILE_NAME);
+        addNewService(ENTITY_TYPE.VILLA, VILLA_FILE_NAME);
     }
 
-    public static void getAllInformationService(EntityType serviceType) {
+    public static void getAllInformationService(ENTITY_TYPE serviceType) {
         List<Services> servicesList = ReadFile.getDataFromCsv(serviceType);
         for (Services service : servicesList) {
             ServicesView.displayInformation(service);
         }
     }
 
-    public static void getNameServiceAndRemoveDuplicate(EntityType serviceType) {
+    public static void getNameServiceAndRemoveDuplicate(ENTITY_TYPE serviceType) {
         List<Services> servicesList = ReadFile.getDataFromCsv(serviceType);
         TreeSet<String> treeSet = new TreeSet<>();
         for (Services service : servicesList) {
@@ -43,7 +43,7 @@ public class ServicesController implements DefineConstants {
         setRentType(services);
     }
 
-    public static void addNewService(EntityType service, String fileName) {
+    public static void addNewService(ENTITY_TYPE service, String fileName) {
         switch (service) {
             case VILLA:
                 services = new Villa();

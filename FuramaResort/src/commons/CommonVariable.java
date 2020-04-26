@@ -2,8 +2,8 @@ package commons;
 
 import java.util.Scanner;
 
-public interface DefineConstants {
-     enum EntityType {
+public interface CommonVariable {
+     enum ENTITY_TYPE {
         VILLA, HOUSE, ROOM, CUSTOMER, EMPLOYEE
     }
     Scanner scan = new Scanner(System.in);

@@ -1,4 +1,5 @@
 package models;
+
 public class House extends Services {
     private String roomStandard;
     private String descriptionOtherAmenities;
@@ -6,13 +7,6 @@ public class House extends Services {
     private static int countHouse;
 
     public House() {
-    }
-
-    public House(String id, String serviceName, String usedArea, String rentCost, String maxQuantityOfPeople, String renType, String roomStandard, String descriptionOtherAmenities, String floorNumber) {
-        super(id, serviceName, usedArea, rentCost, maxQuantityOfPeople, renType);
-        this.roomStandard = roomStandard;
-        this.descriptionOtherAmenities = descriptionOtherAmenities;
-        this.floorNumber = floorNumber;
     }
 
     public String getRoomStandard() {
@@ -41,8 +35,8 @@ public class House extends Services {
 
     @Override
     public String showInfo() {
-        countHouse+=1;
-        return ""+countHouse+" Id: " + super.getId() +
+        countHouse += 1;
+        return "" + countHouse + " Id: " + super.getId() +
                 " Service Name: " + super.getServiceName() +
                 " Used Area: " + super.getUsedArea() +
                 " Rent Cost: " + super.getRentCost() +

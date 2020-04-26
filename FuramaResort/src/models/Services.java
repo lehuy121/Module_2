@@ -1,8 +1,8 @@
 package models;
 
-import commons.DefineConstants;
+import commons.CommonVariable;
 
-public abstract class Services implements DefineConstants {
+public abstract class Services implements CommonVariable {
     private String id;
     private String serviceName;
     private String usedArea;

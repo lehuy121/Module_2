@@ -4,13 +4,12 @@ import commons.ReadFile;
 import commons.Validation;
 import commons.WriteFile;
 import models.Customer;
-import commons.DefineConstants;
-import models.Services;
+import commons.CommonVariable;
 import views.CustomerView;
 
 import java.util.*;
 
-public class CustomerController implements DefineConstants {
+public class CustomerController implements CommonVariable {
     static Customer customer = new Customer();
     static List<String> listCustomer;
     static List<String> listService;
@@ -94,7 +93,7 @@ public class CustomerController implements DefineConstants {
 
     public static void sortByName() {
         List<Customer> customerList;
-        customerList = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
+        customerList = ReadFile.getDataFromCsv(ENTITY_TYPE.CUSTOMER);
         customerList.sort(new customerComparator());
         for (Customer customer : customerList) {
             CustomerView.displayAllCustomer(customer);
@@ -104,7 +103,7 @@ public class CustomerController implements DefineConstants {
     public static void numberedAllCustomerByMap() {
         Map<Integer, String> map = new HashMap<>();
         List<Customer> customerList;
-        customerList = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
+        customerList = ReadFile.getDataFromCsv(ENTITY_TYPE.CUSTOMER);
         for (int i = 0, j = 1; i < customerList.size(); i++, j++) {
             map.put(j, customerList.get(i).showInfo());
         }
@@ -127,23 +126,23 @@ public class CustomerController implements DefineConstants {
         WriteFile.writeData(BOOKING_FILE_NAME, booking);
     }
 
-    public static void bookingService(int customerNumber, int serviceNumber, EntityType service) {
-        customerNumber--;
-        serviceNumber--;
-        List<Customer> listCustomer = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
-        getCustomerFromCsv = listCustomer.get(customerNumber).showInfo();
-
-        List<Services> listService = ReadFile.getDataFromCsv(service);
-        getService = listService.get(serviceNumber).showInfo();
-
-        booking = new String[]{getCustomerFromCsv, getService};
-        WriteFile.writeData(BOOKING_FILE_NAME, booking);
-
-    }
+//    public static void bookingService(int customerNumber, int serviceNumber, ENTITY_TYPE service) {
+//        customerNumber--;
+//        serviceNumber--;
+//        List<Customer> listCustomer = ReadFile.getDataFromCsv(ENTITY_TYPE.CUSTOMER);
+//        getCustomerFromCsv = listCustomer.get(customerNumber).showInfo();
+//
+//        List<Services> listService = ReadFile.getDataFromCsv(service);
+//        getService = listService.get(serviceNumber).showInfo();
+//
+//        booking = new String[]{getCustomerFromCsv, getService};
+//        WriteFile.writeData(BOOKING_FILE_NAME, booking);
+//
+//    }
 
     public static void main(String[] args) {
 
-        List<Customer> listCustomer = ReadFile.getDataFromCsv(EntityType.CUSTOMER);
+        List<Customer> listCustomer = ReadFile.getDataFromCsv(ENTITY_TYPE.CUSTOMER);
         String result = listCustomer.get(0).showInfo();
         System.out.println(result);
     }

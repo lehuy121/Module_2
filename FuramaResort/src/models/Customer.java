@@ -1,8 +1,8 @@
 package models;
 
-import commons.DefineConstants;
+import commons.CommonVariable;
 
-public class Customer implements DefineConstants {
+public class Customer implements CommonVariable {
     private String customerName;
     private String dayOfBirth;
     private String gender;
@@ -11,7 +11,7 @@ public class Customer implements DefineConstants {
     private String email;
     private String customerType;
     private String address;
-    private Services useService;
+   // private Services useService;
 
     public Customer() {
     }
@@ -80,13 +80,13 @@ public class Customer implements DefineConstants {
         this.address = address;
     }
 
-    public Services getUseService() {
-        return useService;
-    }
-
-    public void setUseService(Services useService) {
-        this.useService = useService;
-    }
+//    public Services getUseService() {
+//        return useService;
+//    }
+//
+//    public void setUseService(Services useService) {
+//        this.useService = useService;
+//    }
 
     public String showInfo() {
         return "{" +

@@ -1,13 +1,13 @@
 package controllers;
 
 import commons.ReadFile;
-import commons.DefineConstants;
+import commons.CommonVariable;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class BookingMovieController implements DefineConstants {
+public class BookingMovieController implements CommonVariable {
     static int ticketHasBeenSold = 0;
     static int totalTickets = 4;
     static int choiceCustomer = 0;

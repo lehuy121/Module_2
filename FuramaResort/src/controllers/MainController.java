@@ -1,8 +1,8 @@
 package controllers;
 
-import commons.DefineConstants;
+import commons.CommonVariable;
 
-public class MainController implements DefineConstants {
+public class MainController implements CommonVariable {
     public static int choiceCustomer = 0;
     public static int choiceService = 0;
 
@@ -136,15 +136,15 @@ public class MainController implements DefineConstants {
     }
 
     private static void addNewVilla() {
-        ServicesController.addNewService(EntityType.VILLA, VILLA_FILE_NAME);
+        ServicesController.addNewService(ENTITY_TYPE.VILLA, VILLA_FILE_NAME);
     }
 
     private static void addNewHouse() {
-        ServicesController.addNewService(EntityType.HOUSE, HOUSE_FILE_NAME);
+        ServicesController.addNewService(ENTITY_TYPE.HOUSE, HOUSE_FILE_NAME);
     }
 
     private static void addNewRoom() {
-        ServicesController.addNewService(EntityType.ROOM, ROOM_FILE_NAME);
+        ServicesController.addNewService(ENTITY_TYPE.ROOM, ROOM_FILE_NAME);
     }
 
     private static void showServices() {
@@ -182,27 +182,27 @@ public class MainController implements DefineConstants {
     }
 
     private static void showAllVilla() {
-        ServicesController.getAllInformationService(EntityType.VILLA);
+        ServicesController.getAllInformationService(ENTITY_TYPE.VILLA);
     }
 
     private static void showAllHouse() {
-        ServicesController.getAllInformationService(EntityType.HOUSE);
+        ServicesController.getAllInformationService(ENTITY_TYPE.HOUSE);
     }
 
     private static void showAllRoom() {
-        ServicesController.getAllInformationService(EntityType.ROOM);
+        ServicesController.getAllInformationService(ENTITY_TYPE.ROOM);
     }
 
     private static void showAllNameVillaNotDuplicate() {
-        ServicesController.getNameServiceAndRemoveDuplicate(EntityType.VILLA);
+        ServicesController.getNameServiceAndRemoveDuplicate(ENTITY_TYPE.VILLA);
     }
 
     private static void showAllNameHouseNotDuplicate() {
-        ServicesController.getNameServiceAndRemoveDuplicate(EntityType.HOUSE);
+        ServicesController.getNameServiceAndRemoveDuplicate(ENTITY_TYPE.HOUSE);
     }
 
     private static void showAllNameRoomNotDuplicate() {
-        ServicesController.getNameServiceAndRemoveDuplicate(EntityType.ROOM);
+        ServicesController.getNameServiceAndRemoveDuplicate(ENTITY_TYPE.ROOM);
     }
 
     static void mainMenuMessage() {
