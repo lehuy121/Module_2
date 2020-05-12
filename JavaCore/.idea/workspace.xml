@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fad302ba-e325-49c2-b4f5-7bda27463aa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/linked_list/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/linked_list/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/linked_list/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_6data_structures_and_algorithms/baitap/linked_list/MyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
       <recent name="H:\Module_2\JavaCore\src\NhapMonLapTrinh\ThucHanh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyLinkedListTest">
+  <component name="RunManager" selected="Application.TestStringBuilder_Buffer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_5advanced_object_oriented_design.baitap.colorable.Main" />
       <module name="JavaCore" />
@@ -93,6 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestStringBuilder_Buffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestStringBuilder_Buffer" />
+      <module name="JavaCore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TennisGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCore" />
       <extension name="coverage">
@@ -108,29 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TennisGameTest.checkAllScores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaCore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_7clean_code.baitap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="_7clean_code.baitap" />
-      <option name="MAIN_CLASS_NAME" value="_7clean_code.baitap.TennisGameTest" />
-      <option name="METHOD_NAME" value="checkAllScores" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestStringBuilder_Buffer" />
         <item itemvalue="Application.MyLinkedListTest" />
         <item itemvalue="Application.MyListTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TennisGameTest" />
-        <item itemvalue="JUnit.TennisGameTest.checkAllScores" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +153,8 @@
       <workItem from="1586915063829" duration="39715000" />
       <workItem from="1587004388733" duration="22314000" />
       <workItem from="1587113739076" duration="6162000" />
+      <workItem from="1588815645987" duration="2119000" />
+      <workItem from="1588900985108" duration="446000" />
     </task>
     <servers />
   </component>
@@ -175,6 +166,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586247061602" />
+    <state x="274" y="23" key="#Tomcat_Server" timestamp="1588901178986">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="23" key="#Tomcat_Server/0.0.1366.728@0.0.1366.728" timestamp="1588901178986" />
     <state x="413" y="120" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586937864961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -203,22 +198,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="425" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1587119419067" />
-    <state width="1323" height="79" key="GridCell.Tab.0.bottom" timestamp="1587119914270">
+    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1588901171612">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587119914270" />
-    <state width="1323" height="79" key="GridCell.Tab.0.center" timestamp="1587119914270">
+    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588901171612" />
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom" timestamp="1588846528219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587119914270" />
-    <state width="1323" height="79" key="GridCell.Tab.0.left" timestamp="1587119914270">
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588846528219" />
+    <state width="1323" height="135" key="GridCell.Tab.0.center" timestamp="1588846528219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587119914270" />
-    <state width="1323" height="79" key="GridCell.Tab.0.right" timestamp="1587119914270">
+    <state width="1323" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588846528219" />
+    <state width="1323" height="135" key="GridCell.Tab.0.left" timestamp="1588846528219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="79" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587119914270" />
+    <state width="1323" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588846528219" />
+    <state width="1323" height="135" key="GridCell.Tab.0.right" timestamp="1588846528219">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588846528219" />
     <state width="1323" height="79" key="GridCell.Tab.1.bottom" timestamp="1587119914271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -239,10 +238,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="28" y="0" width="1277" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587026835826" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1587004532731">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1588900985135">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587004532731" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588900985135" />
     <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586962632009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -255,10 +254,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="131" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1587009944977" />
-    <state x="65" y="0" key="new project wizard" timestamp="1587036928106">
+    <state x="65" y="0" key="new project wizard" timestamp="1588901425695">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587036928106" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1588901425695" />
     <state x="389" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1587005751978">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
