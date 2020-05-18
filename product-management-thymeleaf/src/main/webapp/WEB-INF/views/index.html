@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="layout :: head"><title>Index Page</title></head>
+<body>
+<h3>Products Management</h3>
+<p>
+    <a th:href="@{/addProductPage}">
+        Add New Product
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<fieldset>
+    <legend>List Products</legend>
+    <table id="listProduct">
+        <thead>
+        <tr>
+            <th><a th:href="@{/sortByName}">Name</a></th>
+            <th><a th:href="@{/sortByPrice}">Price</a></th>
+            <th>Description</th>
+            <th>Provider</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>View</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product : ${listProducts}">
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+            <td th:text="${product.description}"></td>
+            <td th:text="${product.provider}"></td>
+            <td><a th:href="@{editProductPage/{id}(id=${product.id})}">Edit</a></td>
+            <td><a th:href="@{deleteProductPage/{id}(id=${product.id})}">Delete</a></td>
+            <td><a th:href="@{viewProductPage/{id}(id=${product.id})}">View</a></td>
+            <!--        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+            <!--        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>-->
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>
