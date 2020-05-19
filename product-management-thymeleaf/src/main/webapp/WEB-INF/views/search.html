@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="layout :: head"><title>Result Search Page</title></head>
+<body>
+<!--    <input type="hidden" th:field="*{id}"/>-->
+<fieldset>
+    <legend>Result</legend>
+    <table id="listProduct">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Provider</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product : ${resultProduct}">
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+            <td th:text="${product.description}"></td>
+            <td th:text="${product.provider}"></td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

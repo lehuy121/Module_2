@@ -13,7 +13,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String goIndex(Model model) {
         model.addAttribute("listProducts", productService.displayAll());
         return "index";
@@ -30,7 +30,7 @@ public class ProductController {
         product.setId((int) (Math.random() * 1000000));
         productService.add(product);
         redirectAttributes.addFlashAttribute("success", "Add product successfully");
-        return "redirect:index";
+        return "redirect:/";
     }
 
     @GetMapping("editProductPage/{id}")
@@ -43,7 +43,7 @@ public class ProductController {
     public String editProduct(@ModelAttribute("product") Product product, RedirectAttributes redirectAttributes) {
         productService.edit(product.getId(), product);
         redirectAttributes.addFlashAttribute("success", "Edit product successfully");
-        return "redirect:index";
+        return "redirect:/";
     }
 
     @GetMapping("deleteProductPage/{id}")
@@ -56,7 +56,7 @@ public class ProductController {
     public String deleteProduct(@ModelAttribute("product") Product product, RedirectAttributes redirectAttributes) {
         productService.delete(product.getId());
         redirectAttributes.addFlashAttribute("success", "Delete product successfully");
-        return "redirect:index";
+        return "redirect:/";
     }
 
     @GetMapping("viewProductPage/{id}")
@@ -74,6 +74,12 @@ public class ProductController {
     public String sortByPrice(Model model){
         model.addAttribute("listProducts", productService.displayByPrice());
         return("index");
+    }
+
+    @PostMapping("/search")
+    public String search(@RequestParam(value = "searchValue") String searchValue, Model model){
+        model.addAttribute("resultProduct", productService.searchByName(searchValue));
+        return "search";
     }
 
 }

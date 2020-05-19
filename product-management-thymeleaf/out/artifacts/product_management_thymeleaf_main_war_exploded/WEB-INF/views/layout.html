@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Spring Product</title>
 
     <style type="text/css">
-        h3{background-color: blue; color: white; padding: 10px 0 10px 20px;}
-        footer{margin: 10px 0;}
+        #searchForm input{
+            height: 24px;
+            width: 194px;
+        }
+
+        #searchForm button{
+            height: 30px;
+            width: 200px;
+        }
+
+        footer {
+            margin: 10px 0;
+        }
 
         #listProduct {
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -22,9 +33,13 @@
             padding: 8px;
         }
 
-        #listProduct tr:nth-child(even){background-color: #f2f2f2;}
+        #listProduct tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
-        #listProduct tr:hover {background-color: #ddd;}
+        #listProduct tr:hover {
+            background-color: #ddd;
+        }
 
         #listProduct th {
             padding-top: 12px;
@@ -34,7 +49,7 @@
             color: white;
         }
 
-        input[type=text],input[type=email]{
+        input[type=text], input[type=email] {
             width: 100%;
             padding: 12px 0px;
             margin: 8px 0;
@@ -45,7 +60,7 @@
         }
 
         input[type=submit] {
-            width: 300px;
+            width: 175px;
             background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
@@ -60,6 +75,14 @@
             background-color: #45a049;
         }
 
+        a {
+            text-decoration: none;
+        }
+
+        th a:visited {
+            color: white;
+        }
+
         #form {
             width: 500px;
             border-radius: 5px;
@@ -67,13 +90,16 @@
             padding: 20px;
         }
 
-        .notify span{font-size: 15px; color: blue;}
+        .notify span {
+            font-size: 15px;
+            color: blue;
+        }
     </style>
 </head>
 <body>
 
 <footer th:fragment="footer">
-    &copy; 2020 CodeGym <a th:href="@{/index}">
+    &copy; 2020 CodeGym <a th:href="@{/}">
     Back to Index
 </a>
 </footer>

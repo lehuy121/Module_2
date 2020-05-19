@@ -2,7 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head th:replace="layout :: head"><title>Index Page</title></head>
 <body>
-<h3>Products Management</h3>
+<div id="searchForm">
+    <form th:action="@{/search}" th:method="post">
+    <label>
+        <input th:name="searchValue" placeholder="Enter Product Name">
+        <button type="submit" value="Search">Search</button>
+    </label>
+    </form>
+</div>
 <p>
     <a th:href="@{/addProductPage}">
         Add New Product
@@ -33,11 +40,9 @@
             <td th:text="${product.price}"></td>
             <td th:text="${product.description}"></td>
             <td th:text="${product.provider}"></td>
-            <td><a th:href="@{editProductPage/{id}(id=${product.id})}">Edit</a></td>
-            <td><a th:href="@{deleteProductPage/{id}(id=${product.id})}">Delete</a></td>
-            <td><a th:href="@{viewProductPage/{id}(id=${product.id})}">View</a></td>
-            <!--        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>-->
-            <!--        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>-->
+            <td><a th:href="@{editProductPage/__${product.id}__}">Edit</a></td>
+            <td><a th:href="@{deleteProductPage/__${product.id}__}">Delete</a></td>
+            <td><a th:href="@{viewProductPage/__${product.id}__}">View</a></td>
         </tr>
         </tbody>
     </table>
