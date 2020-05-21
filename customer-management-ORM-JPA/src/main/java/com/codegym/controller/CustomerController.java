@@ -16,7 +16,7 @@ import java.util.List;
 public class CustomerController {
     @Autowired
     CustomerService customerService;
-    @GetMapping("/create-customer")
+    @GetMapping("/ ")
     public ModelAndView showCreateForm(){
         ModelAndView modelAndView = new ModelAndView("/customer/create");
         modelAndView.addObject("customer", new Customer());

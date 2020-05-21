@@ -76,10 +76,16 @@ public class ProductController {
         return("index");
     }
 
+//    @PostMapping("/search")
+//    public String search(@RequestParam(value = "searchValue") String searchValue, Model model){
+//        model.addAttribute("resultProduct", productService.searchByName(searchValue));
+//        return "search";
+//    }
+
     @PostMapping("/search")
     public String search(@RequestParam(value = "searchValue") String searchValue, Model model){
-        model.addAttribute("resultProduct", productService.searchByName(searchValue));
-        return "search";
+        model.addAttribute("listProducts", productService.searchByName(searchValue));
+        return "index";
     }
 
 }
