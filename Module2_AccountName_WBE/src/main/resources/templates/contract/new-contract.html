@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container" id="container">
+    <div th:replace="layout::header"></div>
+    <div th:replace="layout::menu"></div>
+    <div class="row" id="content">
+        <div th:replace="layout::left"></div>
+        <div class="col-10" id="center">
+            <div class="row" id="list-customer">
+                <div class="container">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2>Add <b>Contract</b></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <form th:action="@{/create-contract}" th:method="post" th:object="${contract}" novalidate>
+                            <div class="input-group date" data-provide="datepicker">
+                                <label for="startDay">Start Day:</label>
+                                <input  class="form-control"  data-date-format="yyyy/mm/dd" type="date" id="startDay" autocomplete="off" th:field="*{start_day}"/>
+                                <p class="text-danger" th:if="${#fields.hasErrors('start_day')}" th:errors="*{start_day}"></p>
+                            </div>
+
+                            <div class="input-group date" data-provide="datepicker">
+                                <label for="endDay">End Day:</label>
+                                <input  class="form-control"  data-date-format="yyyy/mm/dd" type="date" id="endDay" autocomplete="off" th:field="*{end_day}"/>
+                                <p class="text-danger" th:if="${#fields.hasErrors('end_day')}" th:errors="*{end_day}"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="deposits">Deposits:</label>
+                                <input type="number" class="form-control" id="deposits" name="deposits" th:field="*{deposits}">
+                                <p class="text-danger" th:if="${#fields.hasErrors('deposits')}" th:errors="*{deposits}"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="customerList">Customers:</label>
+                                <select class="form-control" id="customerList" name="customerList" th:field="*{customer}">
+                                    <option th:each=" customer: ${customerList}" th:value="${customer.id}" th:text="${customer.name}"></option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="serviceList">Services:</label>
+                                <select class="form-control" id="serviceList" name="serviceList" th:field="*{service}">
+                                    <option th:each="service: ${serviceList}" th:value="${service.id}" th:text="${service.name}"></option>
+                                </select>
+                            </div>
+
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div th:replace="layout::bottom"></div>
+        </div>
+        <div th:replace="layout::right"></div>
+    </div>
+</div>
+<script>
+    let deposit = document.getElementById("deposits").value;
+</script>
+</body>
+</html>

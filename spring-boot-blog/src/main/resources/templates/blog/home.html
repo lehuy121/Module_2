@@ -5,14 +5,19 @@
     <title>Home</title>
 </head>
 <body>
-<h1>Welcome to my Blog</h1>
+<th:block th:if="${userInfo}">
+    <span th:text="${userInfo.username}"></span>
+</th:block>
+
+<br>
+<a th:href="@{/loginPage}"><span>Login</span></a> | <a th:href="@{/logout}"><span>Logout</span></a>
 <form th:action="@{/homePage}">
     <label>
         <input type=text name="keyword" placeholder="Search by Title"/>
     </label>
     <input type="submit" value="Search">
 </form>
-
+<span th:href="@{/createBlogPage}"></span>
 <span id="menu" th:each="category: ${categories}">
         <a th:href="@{../blog-by-category/__${category.id}__/__${category.name}__}"><span
                 th:text="${category.name}"></span></a>

@@ -5,7 +5,9 @@ import com.huy.models.Category;
 import com.huy.services.BlogService;
 import com.huy.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
+@SessionAttributes("userInfo")
 public class BlogController {
     @Autowired
     private BlogService blogService;
@@ -29,13 +32,16 @@ public class BlogController {
 
     @GetMapping("/homePage")
     public String homePage(Model model, @PageableDefault(size = 3) Pageable pageable, @RequestParam Optional<String> keyword) {
-       // model.addAttribute("listCategory", categoryService.getAll());
+        // model.addAttribute("listCategory", categoryService.getAll());
         String keywordLast = null;
-        if(keyword.isPresent()){
+        Pageable pageableSortByCreateAt = PageRequest.of(pageable.getPageNumber(), 3, Sort.by("createdAt").descending());
+
+        if (keyword.isPresent()) {
             keywordLast = keyword.get();
-            model.addAttribute("listBlogs", blogService.findAllByTitleContainingOrderByCreatedAtDesc(keywordLast,pageable));
-        }else{
-            model.addAttribute("listBlogs", blogService.findAllByOrderByCreatedAtDesc(pageable));
+            // model.addAttribute("listBlogs", blogService.findAllByTitleContainingOrderByCreatedAtDesc(keywordLast,pageable));
+            model.addAttribute("listBlogs", blogService.findAllByTitleContaining(keywordLast, pageableSortByCreateAt));
+        } else {
+            model.addAttribute("listBlogs", blogService.getAll(pageableSortByCreateAt));
         }
         model.addAttribute("keyword", keywordLast);
         return "blog/home";
@@ -51,7 +57,6 @@ public class BlogController {
     @GetMapping("/createBlogPage")
     public String createBlogPage(Model model) {
         model.addAttribute("blog", new Blog());
-        // model.addAttribute("listCategory", categoryService.getAll());
         return "blog/create";
     }
 

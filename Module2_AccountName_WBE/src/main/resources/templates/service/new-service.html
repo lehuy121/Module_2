@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container" id="container">
+    <div th:replace="layout::header"></div>
+    <div th:replace="layout::menu"></div>
+    <div class="row" id="content">
+        <div th:replace="layout::left"></div>
+        <div class="col-10" id="center">
+            <div class="row" id="list-customer">
+                <div class="container">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2>Add <b>Service</b></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <form th:action="create-service" th:method="post" th:object="${service}" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" th:field="*{name}">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="area">Area:</label>
+                                <input class="form-control" type="number" id="area" th:field="*{area}"/>
+                                <p class="text-danger" th:if="${#fields.hasErrors('area')}" th:errors="*{area}"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="number_of_floor">Number Of Floor:</label>
+                                <input type="number" class="form-control" id="number_of_floor"
+                                       th:field="*{number_of_floor}">
+                                <p class="text-danger" th:if="${#fields.hasErrors('number_of_floor')}"
+                                   th:errors="*{number_of_floor}"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="number_of_people">Number Of People:</label>
+                                <input type="number" class="form-control" id="number_of_people"
+                                       th:field="*{number_of_people}">
+                                <p class="text-danger" th:if="${#fields.hasErrors('number_of_people')}"
+                                   th:errors="*{number_of_people}"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="rent_cost">Rent Cost:</label>
+                                <input type="number" class="form-control" id="rent_cost" th:field="*{rent_cost}">
+                                <p class="text-danger" th:if="${#fields.hasErrors('rent_cost')}"
+                                   th:errors="*{rent_cost}"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Status:</label>
+                                <input type="text" class="form-control" id="status" th:field="*{status}">
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType">Service Type</label>
+                                <select class="form-control" id="serviceType" th:field="*{serviceType}">
+                                    <option th:each=" serviceType: ${listServiceType}"
+                                            th:value="${serviceType.id_service_type}"
+                                            th:text="${serviceType.name}"></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rentType">Rent Type</label>
+                                <select class="form-control" id="rentType" th:field="*{rentType}">
+                                    <option th:each=" rentType: ${listRentType}"
+                                            th:value="${rentType.id_rent_type}"
+                                            th:text="${rentType.name} + '( ' + ${rentType.price} + ' $ )'">
+                                    </option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div th:replace="layout::bottom"></div>
+        </div>
+        <div th:replace="layout::right"></div>
+    </div>
+</div>
+</body>
+</html>

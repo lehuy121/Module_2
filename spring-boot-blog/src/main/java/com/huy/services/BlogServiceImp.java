@@ -20,6 +20,16 @@ public class BlogServiceImp implements BlogService {
     }
 
     @Override
+    public List<Blog> getAll() {
+        return blogRepository.findAll();
+    }
+
+    @Override
+    public List<Blog> findAllBlogByCategory(Integer id) {
+        return blogRepository.findByCategory_Id(id);
+    }
+
+    @Override
     public Blog getById(Integer idBlog) {
         return blogRepository.findById(idBlog).orElse(null);
     }
@@ -47,6 +57,11 @@ public class BlogServiceImp implements BlogService {
     @Override
     public Page<Blog> findAllByTitleContainingOrderByCreatedAtDesc(String title, Pageable pageable) {
         return blogRepository.findAllByTitleContainingOrderByCreatedAtDesc(title, pageable);
+    }
+
+    @Override
+    public Page<Blog> findAllByTitleContaining(String title, Pageable pageable) {
+        return blogRepository.findAllByTitleContaining(title,pageable);
     }
 
 }
